@@ -1,0 +1,66 @@
+.view-queue-pic {
+    width: 85%;
+    margin-top: 10%;
+}
+
+.view-header {
+    font-family: 'Montserrat-Bold';
+    font-size: 60px;
+    margin-top: 20% !important;
+    color: #3469E7;
+}
+
+.view-subheader {
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 3%;
+}
+
+.text-input {
+    padding: 2%;
+    border-radius: 0.5em;
+    border: 2px solid #E5E5E5;
+}
+
+.username.text-input {
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 5% !important;
+}
+
+.code.text-input {
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 4% !important;
+}
+
+.submit-btn {
+    font-size: 12px;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    border: none;
+    background-color: #4168DF;
+    color: #FFFFFF;
+    padding: 3%;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.view-queue.submit-btn {
+    display: inline-block;
+    width: 53%;
+    margin-left: 3%;
+    margin-top: 5% !important;
+}
+
+.btn-part {
+    width: 10% !important;
+    margin-left: 0% !important;
+    background-color: #2B4BAD;
+}
+
+.arrow-icon {
+    width: 12px;
+}
