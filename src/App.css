@@ -7,11 +7,15 @@
 }
 
 body {
-  font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Montserrat-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.navigation-menu ul {
+  font-family: 'Montserrat-Bold' !important;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .container {

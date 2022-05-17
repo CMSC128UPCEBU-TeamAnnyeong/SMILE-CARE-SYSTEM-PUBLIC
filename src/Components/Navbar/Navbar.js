@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 
+//img
+import logo from '../../Assets/logo.png';
+
 function Navbar() {
+
+  const [isNavExpanded, setIsNavExpended] = useState(false);
+
   return (
     <nav className="navigation">
       <a href="/" className="brand-name">
-        SMILE CARE
+        <img src={logo} className="navbar-logo"/>
       </a>
-      <button className="hamburger">
+      <button className="hamburger" onClick={() => {setIsNavExpended(!isNavExpanded)}}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -22,17 +28,12 @@ function Navbar() {
         </svg>
       </button>
       <div
-        className="navigation-menu">
-        <ul>
-          <li>
-            <a href="/home">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
+        className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+        <ul className='list-items'>
+          <li>Home</li>
+          <li>About</li>
+          <li>View Queue</li>
+          <li>Contact</li>
         </ul>
       </div>
     </nav>

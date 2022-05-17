@@ -4,10 +4,9 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0.5rem 0rem;
+    padding: 1.5rem 0rem 0.5rem 0.5rem;
     background-color: #fff;
     color: black;
-    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
   }
 
   .brand-name {
@@ -28,7 +27,7 @@
 
   .navigation-menu li {
     list-style-type: none;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
   }
 
   .navigation-menu li a {
@@ -43,7 +42,7 @@
     width: 40px;
     padding: 0.5rem;
     border-radius: 50%;
-    background-color: #283b8b;
+    background-color: #3469E7;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     position: absolute;
@@ -57,8 +56,8 @@
     background-color: #2642af;
   }
 
-  @media screen and (max-width: 768px) {
-
+  .navbar-logo {
+    width: 18rem;
   }
 
   @media screen and (max-width: 768px) {
@@ -78,6 +77,8 @@
   @media screen and (max-width: 768px) {
 
     .navigation-menu ul {
+      font-family: 'Montserrat-Bold' !important;
+      font-weight: 700;
       position: absolute;
       top: 60px;
       left: 0;
@@ -93,7 +94,7 @@
       margin: 0;
     }
 
-    .navigation-menu li a {
+    .navigation-menu li  {
       color: black;
       width: 100%;
       padding: 1.5rem 0;
@@ -102,6 +103,14 @@
     .navigation-menu li:hover {
       background-color: #eee;
     }
+
+    .navigation-menu ul {
+      display: none;
+    }
+
+    .navigation-menu.expanded ul {
+      display: block;
+    }  
 
   }
   
