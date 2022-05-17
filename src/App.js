@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 
 /** PAGES **/
 import ViewQueue from './Pages/ViewQueue';
+import ViewQueueTable from './Pages/ViewQueueTable';
 
 function App() {
 
@@ -13,7 +14,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <ViewQueue/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<ViewQueue/>}/>
+          <Route path="/view" element={<ViewQueueTable/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
