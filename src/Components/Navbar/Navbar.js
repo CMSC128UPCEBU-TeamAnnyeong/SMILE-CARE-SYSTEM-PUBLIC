@@ -3,10 +3,13 @@ import './Navbar.css'
 
 //img
 import logo from '../../Assets/logo.png';
+import { Navigate } from 'react-router-dom';
 
 function Navbar() {
 
   const [isNavExpanded, setIsNavExpended] = useState(false);
+  const [redirectToView, setRedirectToView] = useState(false);
+
 
   return (
     <nav className="navigation">
@@ -32,7 +35,7 @@ function Navbar() {
         <ul className='list-items'>
           <li>Home</li>
           <li>About</li>
-          <li>View Queue</li>
+          <li><a href="/">View Queue</a></li>
           <li>Contact</li>
         </ul>
       </div>
