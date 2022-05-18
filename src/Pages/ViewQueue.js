@@ -22,7 +22,7 @@ function ViewQueue() {
           <div className='col-sm-5'>
               <div className='row'>
                   <h1 className='view-header'>View Queue</h1>
-                  <h2 className='view-subheader'>For hassle free appointment</h2>
+                  <h2 className='view-subheader'>For hassle-free appointment</h2>
               </div>
               <div className='row'>
                   <input type="text" className='username text-input' placeholder='USERNAME'/>

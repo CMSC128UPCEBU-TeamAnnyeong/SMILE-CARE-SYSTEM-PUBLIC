@@ -64,3 +64,23 @@
 .arrow-icon {
     width: 12px;
 }
+
+.queue-table-cont {
+    margin-top: 5%;
+}
+
+.greeting-cont {
+    margin: 5%;
+    margin-left: 8%;
+}
+
+.greeting-hello {
+    font-family: 'Montserrat-Bold';
+    font-size: 60px;
+    color: #3469E7;
+}
+
+.greeting-priority {
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+}

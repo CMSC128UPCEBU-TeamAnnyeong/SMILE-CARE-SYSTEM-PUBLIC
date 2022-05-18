@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css'
+import './Components/FontAwesomeIcons';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 

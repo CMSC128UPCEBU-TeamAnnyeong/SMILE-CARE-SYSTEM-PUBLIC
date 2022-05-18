@@ -1,0 +1,285 @@
+/**Table**/
+$bg-color: #ffff;
+$primary-color: #678de6;
+$light-color: #fff;
+$border-color: #ffff;
+$header-bg-color: #ffff;
+$header-text-color: #45517d;
+$ff-primary: "Poppins", sans-serif;
+
+@mixin break {
+  thead {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  td {
+    display: block;
+    position: relative;
+    padding-left: 130px;
+    text-align: left;
+    border-bottom: 0;
+
+    &:last-child {
+      border-bottom: 1px solid $border-color;
+    }
+
+    &::before {
+      content: attr(data-heading);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 120px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      background-color: $primary-color;
+      color: $light-color;
+      font-size: 0.75rem;
+      padding: 0 5px;
+      justify-content: center;
+    }
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: $ff-primary;
+}
+
+.table-container {
+  padding: 1% 3% 1% 3%;
+  max-width: 1500px;
+  width: 90%;
+  margin: 0 auto 10px;
+  background-color: #ffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.078);
+  border-radius: 10px;
+
+  table tr:last-child td:first-child {
+    border-bottom-left-radius: 0px;
+  }
+
+  table tr:last-child td:last-child {
+    border-bottom-right-radius: 0px;
+  }
+
+  table th:first-child {
+    -moz-border-radius: 8px 0 0 0;
+    -webkit-border-radius: 8px 0 0 0;
+  }
+
+  table th:last-child {
+    border-radius: 0 8px 0 0;
+    -moz-border-radius: 0 8px 0 0;
+    -webkit-border-radius: 0 8px 0 0;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+
+    thead {
+      tr {
+        background-color: transparent;
+      }
+    }
+
+    td,
+    th {
+      border: none;
+      padding: 4px;
+    }
+
+    th {
+      font-family: "Montserrat-Bold";
+      // background-color: $header-bg-color;
+      border-bottom: 2px solid #45517d !important;
+      color: $header-text-color;
+      font-size: 0.7rem;
+      font-weight: bold;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      text-align: left;
+    }
+
+    // tr {
+    // background-color: #ffff;
+    // }
+
+    &--break-lg {
+      @media (max-width: 991px) {
+        @include break;
+      }
+    }
+
+    &--break-md {
+      @media (max-width: 767px) {
+        @include break;
+      }
+    }
+
+    &--break-sm {
+      @media (max-width: 575px) {
+        @include break;
+      }
+    }
+  }
+}
+
+/* Adjusts only the table for pending & approved appts*/
+.table-container-appt {
+  margin-left: 10%;
+}
+
+.table-container-treatment-hist {
+  margin: 2% auto 10px 2% !important;
+}
+
+.treatment-history-button-nextAppoitnment {
+  border: none;
+  background: #3469e7;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-top: 0%;
+  margin-right: 5%;
+  font-size: 0.7rem;
+  width: 50%;
+  padding: 2%;
+}
+
+.treatment-history-button-viewBilling {
+  border: none;
+  background: #3abfe2;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-top: 0%;
+  font-size: 0.7rem;
+  width: 50%;
+  padding: 2%;
+}
+
+.activity-cell {
+  border-top: 1px solid rgba(69, 81, 125, 0.1) !important;
+}
+
+.blue-text {
+  color: #45517d;
+}
+
+.grey-text {
+  color: #b2b2b2;
+}
+
+.table-date-filter {
+  border: none;
+  background-color: transparent;
+}
+
+.min-select {
+  width: 5.5em !important;
+}
+
+.queue-table-label {
+  padding-top: 5%;
+  font-weight: 600;
+  font-size: 24px;
+  color: #45517d;
+}
+
+.appointments-table-label {
+  font-family: "Montserrat-Bold";
+  padding-top: 5%;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #45517d;
+}
+
+.treatment-history-table-label {
+  font-family: "Montserrat-Bold";
+  padding-top: 5%;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #45517d;
+  margin-left: 3%;
+}
+
+.queue-table-header-cont {
+  margin-top: 4%;
+}
+
+.treatmentHistory-table-header-cont {
+  margin-top: 4%;
+}
+
+.ongoing {
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
+  color: #85ccaa;
+  font-weight: bold;
+}
+
+.upcoming {
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
+  color: #3abfe2;
+  font-weight: bold;
+}
+
+.canceled {
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
+  color: #f8624f;
+  font-weight: bold;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.filter-cont {
+  margin-bottom: 3%;
+  color: #45517d;
+}
+
+.filter-label {
+  font-family: "Montserrat-Regular";
+  font-weight: 600;
+  margin-right: 2%;
+}
+
+.date-input {
+  margin-right: 3%;
+  border-radius: 8px;
+  border: 1.8px solid gray !important;
+  color: gray;
+  padding: 0.3%;
+}
+
+.activity-header {
+  font-family: "Montserrat-Regular" !important;
+  font-weight: bold !important;
+  font-size: 1.9em !important;
+}
+
+.highlight-row {
+  background-color: #dbe3f7;
+  box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.25);
+}
