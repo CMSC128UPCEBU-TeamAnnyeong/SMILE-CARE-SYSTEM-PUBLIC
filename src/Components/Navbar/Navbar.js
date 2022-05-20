@@ -35,6 +35,7 @@ function Navbar() {
         <ul className='list-items'>
           <li>Home</li>
           <li>About</li>
+          <li><a href="/appointment">Book Appointment</a></li>
           <li><a href="/">View Queue</a></li>
           <li>Contact</li>
         </ul>

@@ -1,0 +1,270 @@
+.form-card-cont {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px -5px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+  padding: 3%;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  width: 98% !important;
+  margin-top: 2% !important;
+  margin: 1%;
+}
+
+/** Form 1 **/
+.peronal-info-header {
+  font-family: "Montserrat-Regular";
+  font-weight: 600;
+  font-size: 30px;
+  color: #45517d;
+}
+
+.personal-input-cont {
+  margin-left: 5%;
+}
+
+.form-label {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: #45517d;
+}
+
+.form-input {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 5px;
+  width: 100%;
+}
+
+.react-datetime-picker__wrapper {
+  border: none !important;
+}
+
+.form-button-next {
+  border: none;
+  background: #3469e7;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 13px;
+  width: 7%;
+  margin: 1%;
+  margin-top: 3%;
+  font-size: 14px;
+}
+
+.form-button-previous {
+  border: none;
+  background: #3abfe2;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 13px;
+  width: 7%;
+  margin: 1%;
+  margin-top: 3%;
+  font-size: 14px;
+}
+
+.medical-form-card-cont {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px -5px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+  padding: 3%;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  width: 98% !important;
+  margin-top: 2% !important;
+  margin: 1%;
+}
+
+/** Form 2 **/
+.medical-info-header {
+  font-family: "Montserrat-Regular";
+  font-weight: 600;
+  font-size: 36px;
+  color: #45517d;
+}
+
+.medical-input-cont {
+  margin-left: 5%;
+}
+
+.physician-label {
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  color: #45517d;
+}
+
+.medical-form-label {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+}
+
+.current-condition {
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  color: #45517d;
+}
+
+.questions {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  line-height: auto;
+  margin-bottom: -5%;
+  color: #45517d;
+}
+
+.response-yes {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 50%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-no {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 100%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+input[type="radio"] {
+  transform: scale(0.9);
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: grid;
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #45517d;
+  border-radius: 50%;
+  place-content: center;
+  border: 3px solid #45517d;
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 3px;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+  background-color: #45517d;
+}
+
+/* optional styles, I'm using this for centering radiobuttons */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.form-button-next {
+  border: none;
+  background: #3469e7;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 13px;
+  width: 7%;
+  margin: 1%;
+  margin-top: 3%;
+  font-size: 14px;
+}
+
+.form-button-previous {
+  border: none;
+  background: #3abfe2;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 13px;
+  width: 7%;
+  margin: 1%;
+  margin-top: 3%;
+  font-size: 14px;
+}
+
+/** Form 3 **/
+.agreement-content {
+  display: inline-block;
+}
+
+.agreement-cont {
+  margin-top: 9%;
+}
+
+.margin-left-1 {
+  margin-left: 1%;
+}
+
+.terms-label {
+  text-decoration: underline;
+  color: #3abfe2;
+  cursor: pointer;
+}
+
+.sign-btn {
+  border: none;
+  background: #3469e7;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 13px;
+  width: 100%;
+  margin: 1%;
+  font-size: 14px;
+}
+
+.clear-btn {
+  color: #ffffff !important;
+}
+
+.signature-img {
+  margin-top: 5% !important;
+  width: 10% !important;
+  border: 2px solid #e5e5e5;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 1.5%;
+}
+
+.signature-cont {
+  border: 2px solid #e5e5e5;
+}
+
+.signature-label {
+  margin-left: 1%;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: #45517d;
+}
+
+/** Form 4 **/
+.notes {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.category-input {
+  padding: 2.3% !important;
+}
