@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Table from '../Components/Table/Table'
+import { getQueue } from '../Helpers/apiCalls/queueApi';
 
 var mockData = [
   {
@@ -31,6 +32,19 @@ var mockData = [
 function ViewQueueTable() {
 
   const [you, setYou] = useState("patient-ad3rgjk");
+  const [queue, setQueue] = useState([]);
+
+
+  async function fetchQueue()  {
+    const response = await getQueue();
+    console.log(response);
+  
+  }
+
+  React.useEffect(() => {
+    fetchQueue();
+  },[]);
+
 
   return (
     <div>

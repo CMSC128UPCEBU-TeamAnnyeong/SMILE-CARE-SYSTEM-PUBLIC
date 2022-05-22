@@ -9,6 +9,10 @@ import rightArrow from '../Assets/right-arrow.png';
 function ViewQueue() {
   const [redirect, setRedirect] = useState(false);
 
+  const handleToken = (e) => {
+    localStorage.setItem('token',  JSON.stringify(e.target.value));
+  }
+
   if(redirect === true) {
       return <Navigate to="/view"/>
   }
@@ -23,10 +27,11 @@ function ViewQueue() {
               <div className='row'>
                   <h1 className='view-header'>View Queue</h1>
                   <h2 className='view-subheader'>For hassle-free appointment</h2>
+                  <p className='view-body'><b>Got your token?</b> Input your token for easy viewing of priority.</p>
+                  <p className='view-subbody'><b>No token?</b> No problem, view the status of clinic without token</p>
               </div>
               <div className='row'>
-                  <input type="text" className='username text-input' placeholder='USERNAME'/>
-                  <input type="text" className='code text-input' placeholder='CODE'/>
+                  <input type="text" className='code text-input' placeholder='TOKEN' onChange={(e) => handleToken(e)}/>
               </div>
               <div className='row'>
                 <div className='submit-btn-cont' onClick={() => setRedirect(true)}>
