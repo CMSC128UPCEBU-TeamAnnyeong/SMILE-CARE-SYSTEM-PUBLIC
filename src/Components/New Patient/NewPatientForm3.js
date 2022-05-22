@@ -8,7 +8,7 @@ import SignatureCanvas from 'react-signature-canvas'
 import './newPatient.css';
 
 //components
-import TermsOfServiceAndPrivacyPolicy from '../../../Components/TermsOfServiceAndPrivacyPolicy/TermsOfServiceAndPrivacyPolicy'
+import TermsOfServiceAndPrivacyPolicy from '../TermsOfServiceAndPrivacyPolicy/TermsOfServiceAndPrivacyPolicy.js';
 
 function NewPatientForm3({patient, setPatient, medicalHistory, setMedicalHistory, sickness, setSickness, agreement, setAgreement, navigation}) {
 

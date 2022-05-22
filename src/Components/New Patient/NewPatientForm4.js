@@ -7,9 +7,15 @@ import { MultiSelect } from "react-multi-select-component"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import { Navigate } from 'react-router-dom'
+import { createPatient } from '../../Helpers/apiCalls/patientApi';
+import { createAppointment } from "../../Helpers/apiCalls/appointmentApi"
+import { getAppointment } from "../../Helpers/apiCalls/appointmentApi"
+import { getCategories, getServices } from '../../Helpers/apiCalls/categoryServicesApi'
+
 
 //css
 import "./newPatient.css"
+
 
 function NewPatientForm4({
   patient,
