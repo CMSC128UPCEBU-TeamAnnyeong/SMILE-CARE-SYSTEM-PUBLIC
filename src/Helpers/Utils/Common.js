@@ -49,6 +49,12 @@ export const getToken = () => {
     return localStorage.getItem('token') || null;
 }
 
+//return token from local storage
+export const getActive = () => {
+    return localStorage.getItem('active') || "";
+}
+
+
 //return token expiry from local storage
 export const getTokenExpiry = () => {
     return localStorage.getItem('token_expiry') || null;

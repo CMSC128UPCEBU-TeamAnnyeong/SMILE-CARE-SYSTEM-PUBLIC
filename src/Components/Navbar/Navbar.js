@@ -4,12 +4,18 @@ import './Navbar.css'
 //img
 import logo from '../../Assets/logo.png';
 import { Navigate } from 'react-router-dom';
+import { getActive } from '../../Helpers/Utils/Common';
 
 function Navbar() {
 
   const [isNavExpanded, setIsNavExpended] = useState(false);
   const [redirectToView, setRedirectToView] = useState(false);
-
+  const [active, setActive] = useState(getActive());
+  console.log(active)
+  const handleActive = (index) => {
+    localStorage.setItem('active',  JSON.stringify(index));
+    setActive(index);
+  }
 
   return (
     <nav className="navigation">
@@ -33,11 +39,11 @@ function Navbar() {
       <div
         className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
         <ul className='list-items'>
-          <li>Home</li>
-          <li>About</li>
-          <li><a href="/appointment">Book Appointment</a></li>
-          <li><a href="/">View Queue</a></li>
-          <li>Contact</li>
+          <li className={active === 0 ? "active" : ""} onClick={() => handleActive(0)}>Home</li>
+          <li className={active === 1 ? "active" : ""} onClick={() => handleActive(1)}>About</li>
+          <li><a href="/appointment" className={active == 2 ? "active" : ""} onClick={() => handleActive(2)}>Book Appointment</a></li>
+          <li><a href="/" className={active == 3 ? "active" : ""} onClick={() => handleActive(3)}>View Queue</a></li>
+          <li className={active === 4 ? "active" : ""} onClick={() => handleActive(4)}>Contact</li>
         </ul>
       </div>
     </nav>
