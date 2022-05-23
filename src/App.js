@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <Router>
         <Routes>
-          <Route path="/new-patient-appointment" element={isAuthenticated ? <NewPatientSwitchForm/> : <Navigate to="/"/>}/>
+          <Route path="/new-patient-appointment" element={isAuthenticated ? <NewPatientSwitchForm/> : <Navigate to="/"/>}/> 
           <Route path="/" element={<ViewQueue/>}/>
           <Route path="/view" element={<ViewQueueTable/>}/>
           <Route path="/appointment" element={<BookAppointment/>}/>
