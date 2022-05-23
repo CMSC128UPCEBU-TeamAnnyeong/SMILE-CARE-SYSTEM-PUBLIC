@@ -2,9 +2,15 @@ import React, { useState } from 'react'
 import './BookAppointment.css';
 import book from '../Assets/book.png'
 import rightArrow from '../Assets/right-arrow.png';
+import { Navigate } from "react-router-dom"
 
 function BookAppointment() {
     const [toNewPatientForm, setToNewPatientForm] = useState(false)
+
+    if (toNewPatientForm == true) {
+        return 
+      }
+
     return (
         <div className="container">
             <div className='row'>
@@ -15,7 +21,7 @@ function BookAppointment() {
                     </div>
 
                     <div className='row'>
-                        <div className='submit-btn-cont' onClick={() => setToNewPatientForm(true)}>
+                        <div className='submit-btn-cont' onClick={() => <Navigate to={"/new-patient-appointment"} />}>
                             <div className='view-queue submit-btn'>New Patient</div>
                             <div className='view-queue submit-btn btn-part'>
                                 <img src={rightArrow} className="arrow-icon"/>
