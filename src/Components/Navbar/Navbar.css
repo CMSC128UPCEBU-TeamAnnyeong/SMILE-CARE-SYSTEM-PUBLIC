@@ -58,7 +58,8 @@
   }
 
   .navbar-logo {
-    width: 18rem;
+    width: 16rem;
+    padding-left: 30%;
   }
 
   @media screen and (max-width: 768px) {

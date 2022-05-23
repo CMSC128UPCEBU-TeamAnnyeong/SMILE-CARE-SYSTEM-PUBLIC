@@ -126,13 +126,11 @@ function NewPatientForm4({
     <div className="page">
       <ToastContainer />
       <div className={`container ${inactive ? "inactive" : "active"}`}>
-        <div className="row">
-          <div className="col-sm-6">
-            <h1 className="page-title">Add Appointment</h1>
-          </div>
-        </div>
         <div className="row page-content">
           <div className="form-card-cont">
+            <div className='row'>
+                  <h1 className='peronal-info-header'>Book Appointment</h1>
+              </div>
             <div className="row mt-4">
               <div className="col-sm-4">
                 <span className="form-label">Appointment Date Time</span>

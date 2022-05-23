@@ -1,0 +1,43 @@
+.home-pic {
+    width: 100%;
+    padding-top: 10%;
+}
+
+.home-header {
+    font-family: 'Montserrat-Bold';
+    font-size: 60px;
+    margin-top: 20% !important;
+    padding-left: 5% !important;
+    color: #3469E7;
+}
+
+.home-subheader {
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    padding-left: 5% !important;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.submit-btn {
+    font-size: 12px;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    border: none;
+    /* background-color: #4168DF; */
+    color: #FFFFFF;
+    padding: 2%;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.home.submit-btn {
+    display: inline-block;
+    width: 30%;
+    margin-left: 3%;
+    text-align: center;
+    margin-top: 5% !important;
+    border-radius: 16px;
+}

@@ -91,11 +91,6 @@ function NewPatientForm3({patient, setPatient, medicalHistory, setMedicalHistory
   return (
     <div className='page'>
         <div className={`container ${inactive ? "inactive" : "active"}`}>
-        <div className='row'>
-            <div className='col-sm-6'>
-                <h1 className='page-title'>Add Patient</h1>
-            </div>
-        </div>
         <div className='row page-content'>
           <div className='form-card-cont'>
             <div className='row'>
