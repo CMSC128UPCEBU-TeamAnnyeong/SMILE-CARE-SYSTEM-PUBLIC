@@ -1,0 +1,55 @@
+.container-contact {
+    margin: 5%;
+    padding-left: 2%;
+}
+
+.contact-info {
+    padding-top: 10%;
+}
+
+.icon {
+    width: 40px;
+    padding-top: 10%;
+    padding-bottom: 80%;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #45517d;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.label-phone {
+    font-weight: 600;
+    font-size: 15px;
+    color: #45517d !important;
+    margin-right: 5%;
+    text-align: justify;
+    padding-top: 2%;
+}
+
+a:link { 
+    text-decoration: none;
+    color: #45517d !important;
+}
+
+.label-fb {
+    font-weight: 600;
+    font-size: 15px;
+    color: #45517d;
+    margin-right: 5%;
+    text-align: justify;
+    padding-top: 2%;
+}
+
+.map {
+    font-family: 'Montserrat-Bold';
+    font-weight: 600;
+    font-size: 25px;
+    color: #3469E7;
+}
+.map-cont {
+    padding-top: 5%;
+}

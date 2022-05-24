@@ -18,7 +18,7 @@ function BookAppointment() {
           <div className="row">
             <h1 className="book-header">Book Appointment</h1>
             <h2 className="book-subheader">
-              We help you bring out your greatest smile
+              Book an appointment with us now so you can smile more confidently
             </h2>
           </div>
 

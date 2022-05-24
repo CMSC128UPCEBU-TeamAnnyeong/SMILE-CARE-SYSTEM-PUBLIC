@@ -12,6 +12,7 @@ import ViewQueue from './Pages/ViewQueue';
 import ViewQueueTable from './Pages/ViewQueueTable';
 import BookAppointment from './Pages/BookAppointment';
 import NewPatientSwitchForm from './Components/New Patient/NewPatientSwitchForm'
+import Contact from './Pages/Contact';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<ViewQueue/>}/>
           <Route path="/view" element={<ViewQueueTable/>}/>
           <Route path="/appointment" element={<BookAppointment/>}/>
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </Router>
       <PoweredBy />
