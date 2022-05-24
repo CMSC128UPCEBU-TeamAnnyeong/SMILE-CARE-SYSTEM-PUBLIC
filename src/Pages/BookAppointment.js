@@ -5,10 +5,10 @@ import rightArrow from "../Assets/right-arrow.png"
 import { Navigate } from "react-router-dom"
 
 function BookAppointment() {
-  const [toNewPatientForm, setToNewPatientForm] = useState(false)
+  const [toBookAppointmentForm, setBookAppointmentForm] = useState(false)
 
-  if (toNewPatientForm == true) {
-    return <Navigate to={"/new-patient-appointment"} />
+  if (toBookAppointmentForm == true) {
+    return <Navigate to={"/book-appointment-form"} />
   }
 
   return (
@@ -25,21 +25,9 @@ function BookAppointment() {
           <div className="row">
             <div
               className="submit-btn-cont"
-              onClick={() => setToNewPatientForm(true)}
+              onClick={() => setBookAppointmentForm(true)}
             >
-              <div className="view-queue submit-btn">New Patient</div>
-              <div className="view-queue submit-btn btn-part">
-                <img src={rightArrow} className="arrow-icon" />
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div
-              className="submit-btn-cont"
-              onClick={() => setToNewPatientForm(true)}
-            >
-              <div className="view-queue submit-btn">Returning Patient</div>
+              <div className="view-queue submit-btn">Create Appointment</div>
               <div className="view-queue submit-btn btn-part">
                 <img src={rightArrow} className="arrow-icon" />
               </div>

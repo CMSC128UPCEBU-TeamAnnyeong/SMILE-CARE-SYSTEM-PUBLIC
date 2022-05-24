@@ -11,7 +11,7 @@ import Home from './Pages/Home'
 import ViewQueue from './Pages/ViewQueue';
 import ViewQueueTable from './Pages/ViewQueueTable';
 import BookAppointment from './Pages/BookAppointment';
-import NewPatientSwitchForm from './Components/New Patient/NewPatientSwitchForm'
+import BookAppointmentForm from './Components/BookAppointmentForm/BookAppointmentForm';
 import Contact from './Pages/Contact';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/home" element={<Home/>}/>
-          <Route path="/new-patient-appointment" element={isAuthenticated ? <NewPatientSwitchForm/> : <Navigate to="/"/>}/> 
+          <Route path="/book-appointment-form" element={isAuthenticated ? <BookAppointmentForm/> : <Navigate to="/"/>}/> 
           <Route path="/" element={<ViewQueue/>}/>
           <Route path="/view" element={<ViewQueueTable/>}/>
           <Route path="/appointment" element={<BookAppointment/>}/>

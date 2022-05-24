@@ -10,7 +10,7 @@ function Contact() {
     <div className= 'container-contact'>
         <div className='row'>
             <div className='col-6'>
-                <div className='contact-info'>
+                <div className='contact-info'>  
                     <div className='row'>
                         <div className='col-sm-1'>
                             <img className='icon' src={Address}/>
