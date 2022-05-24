@@ -7,6 +7,7 @@ import PropTypes from "prop-types"
 //css
 import "./Table.scss"
 import { useNavigate } from "react-router-dom"
+import { formatDate, getTime } from "../../Helpers/Utils/Common"
 
 function Table({
   type,
@@ -77,20 +78,44 @@ function Table({
       )
     } else if (type === "queue") {
       return (
-        <tr key={row.id} className={highlightRow === row.username ? "highlight-row" : ""}>
-          {rowData.map((data, index) => (
+        <tr key={row.id} className={highlightRow === row.token ? "highlight-row" : ""}>
             <td
               key={index}
-              data-heading={data.key}
+              data-heading={row.id}
               className={
-                index != rowData.length - 1
-                  ? "queue-cell blue-text"
-                  : data.val + " queue-cell grey-text"
+              " queue-cell grey-text"
               }
             >
-              {data.val}
+              {index + 1}
             </td>
-          ))}
+            <td
+              key={index}
+              data-heading={row.id}
+              className={
+              " queue-cell blue-text"
+              }
+            >
+              {row.token}
+            </td>
+            <td
+              key={index}
+              data-heading={row.id}
+              className={
+              " queue-cell grey-text"
+              }
+            >
+              {formatDate(row.appointment_date_time) + " " + getTime(row.appointment_date_time)}
+            </td>
+            <td
+              key={index}
+              data-heading={row.id}
+              className={
+              row.status + 
+              " queue-cell grey-text"
+              }
+            >
+              {row.status}
+            </td>
         </tr>
       )
     } else if (type === "patients") {

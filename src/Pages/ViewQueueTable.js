@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Table from '../Components/Table/Table'
 import { getQueue } from '../Helpers/apiCalls/queueApi';
+import { formatDate, getTime, getToken } from '../Helpers/Utils/Common';
 
 var mockData = [
   {
@@ -31,17 +32,27 @@ var mockData = [
 
 function ViewQueueTable() {
 
-  const [you, setYou] = useState("patient-ad3rgjk");
+  const [you, setYou] = useState(getToken().replace(/['"]+/g, ''));
   const [queue, setQueue] = useState([]);
+  const [priority, setPriority] = useState("");
 
 
   async function fetchQueue()  {
     const response = await getQueue();
     console.log(response);
-  
+    setQueue(response.data.data.data);
+
+    response.data.data.data.map((data, index) => {
+      console.log(data.token);
+      console.log(getToken())
+      if(getToken().replace(/['"]+/g, '') == data.token) {
+        setPriority(index + 1);
+      }
+    })
   }
 
   React.useEffect(() => {
+
     fetchQueue();
   },[]);
 
@@ -49,13 +60,21 @@ function ViewQueueTable() {
   return (
     <div>
       <div className='queue-table-cont'>
+      {priority !== "" && (
       <div className='greeting-cont'>
         <h1 className='greeting-hello'>Hey!</h1>
-        <h2 className='greeting-priority'>You're on priority no. 3</h2>
+        <h2 className='greeting-priority'>You're on priority no. {priority}</h2>
       </div>
+      )}
+      {priority === "" && (
+      <div className='greeting-cont'>
+        <h1 className='greeting-hello'>Hey!</h1>
+        <h2 className='greeting-priority'>Here's the queue today</h2>
+      </div>
+      )}
       <Table
         type={"queue"}
-        tableData={mockData}
+        tableData={queue}
         headingColumns={[
           "Priority",
           "Username",

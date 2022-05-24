@@ -13,6 +13,11 @@ function ViewQueue() {
     localStorage.setItem('token',  JSON.stringify(e.target.value));
   }
 
+  React.useEffect(() => {
+    localStorage.removeItem('token');
+  },[])
+
+
   if(redirect === true) {
       return <Navigate to="/view"/>
   }

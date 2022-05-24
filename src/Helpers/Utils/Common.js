@@ -9,7 +9,8 @@ export const refreshPage = () => {
 }
 
 export const getTime = (date) => {
-    return  date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+    var formatTime = new Date(date);
+    return  formatTime.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
 }
 
 export const formatDate = (date) => {
@@ -46,7 +47,7 @@ export const getRoleId = () => {
 
 //return token from local storage
 export const getToken = () => {
-    return localStorage.getItem('token') || null;
+    return localStorage.getItem('token') || "";
 }
 
 //return token from local storage
