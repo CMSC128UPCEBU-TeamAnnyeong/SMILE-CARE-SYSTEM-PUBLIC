@@ -46,7 +46,7 @@ function Contact() {
                         </div>
                         <div className='col-9'>
                             <div className='label-fb'>
-                                <a href='https://www.facebook.com/surigaodentalcenter/' target='_blank'>Surigao Dental Center</a>
+                                <a href='https://www.facebook.com/surigaodentalcenter/' target='_blank' className='fb-link'>Surigao Dental Center</a>
                             </div>
                         </div>
                     </div>
