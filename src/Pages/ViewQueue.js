@@ -19,7 +19,7 @@ function ViewQueue() {
 
 
   if(redirect === true) {
-      return <Navigate to="/view"/>
+      return <Navigate to="/view/queue"/>
   }
 
   return (

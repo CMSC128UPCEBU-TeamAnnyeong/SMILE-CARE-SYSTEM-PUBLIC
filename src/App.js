@@ -24,10 +24,10 @@ function App() {
       <Navbar />
       <Router>
         <Routes>
-          <Route path="/home" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route path="/book-appointment-form" element={isAuthenticated ? <BookAppointmentForm/> : <Navigate to="/"/>}/> 
-          <Route path="/" element={<ViewQueue/>}/>
-          <Route path="/view" element={<ViewQueueTable/>}/>
+          <Route path="/view" element={<ViewQueue/>}/>
+          <Route path="/view/queue" element={<ViewQueueTable/>}/>
           <Route path="/appointment" element={<BookAppointment/>}/>
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
