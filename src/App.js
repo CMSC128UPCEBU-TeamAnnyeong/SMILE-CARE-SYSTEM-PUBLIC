@@ -25,7 +25,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/book-appointment-form" element={isAuthenticated ? <BookAppointmentForm/> : <Navigate to="/"/>}/> 
+          <Route path="/book-appointment-form" element={<BookAppointmentForm/>}/> 
           <Route path="/view" element={<ViewQueue/>}/>
           <Route path="/view/queue" element={<ViewQueueTable/>}/>
           <Route path="/appointment" element={<BookAppointment/>}/>
