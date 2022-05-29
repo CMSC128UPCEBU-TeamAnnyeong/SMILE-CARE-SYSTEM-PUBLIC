@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/SMILE-CARE-SYSTEM-PUBLIC/static/css/main.f00a5263.css",
+    "main.js": "/SMILE-CARE-SYSTEM-PUBLIC/static/js/main.b84163f2.js",
+    "static/js/787.a11a5077.chunk.js": "/SMILE-CARE-SYSTEM-PUBLIC/static/js/787.a11a5077.chunk.js",
+    "static/media/Montserrat-Italic.ttf": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/Montserrat-Italic.e7728c27ba36b97eb82f.ttf",
+    "static/media/Montserrat-Regular.ttf": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Montserrat-Bold.ttf": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
+    "static/media/home.jpg": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/home.c893d546bba12ddbff31.jpg",
+    "static/media/main.png": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/main.f41eeb06cefde982d424.png",
+    "static/media/book.png": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/book.f75b929d739b82eff3c4.png",
+    "static/media/logo-clinic.png": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/logo-clinic.4b5b31a9e95a47715ef5.png",
+    "static/media/placeholder.png": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/placeholder.5180067ab142f3b2f678.png",
+    "static/media/email.png": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/email.384fedcbaab79a31ae5d.png",
+    "static/media/phone-call.png": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/phone-call.dec6870c5a15bebd6730.png",
+    "static/media/facebook.png": "/SMILE-CARE-SYSTEM-PUBLIC/static/media/facebook.74c8baef35bb30c132fa.png",
+    "index.html": "/SMILE-CARE-SYSTEM-PUBLIC/index.html",
+    "main.f00a5263.css.map": "/SMILE-CARE-SYSTEM-PUBLIC/static/css/main.f00a5263.css.map",
+    "main.b84163f2.js.map": "/SMILE-CARE-SYSTEM-PUBLIC/static/js/main.b84163f2.js.map",
+    "787.a11a5077.chunk.js.map": "/SMILE-CARE-SYSTEM-PUBLIC/static/js/787.a11a5077.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f00a5263.css",
+    "static/js/main.b84163f2.js"
+  ]
+}
