@@ -21,14 +21,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-      - name: Npm Version
-        uses: Reedyuk/NPM-Version@1.1.1
-        with:
-          version: "6.13.6"
-          package: "subproject-directory/"
-          git-tag-version: "true"
-
       - run: npm i
+      - run: npm i -g npm@6
       - run: npm run build
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
