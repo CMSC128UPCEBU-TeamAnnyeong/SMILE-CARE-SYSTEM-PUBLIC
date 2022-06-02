@@ -8,6 +8,7 @@ on:
 env:
   REACT_APP_LINK:
   INLINE_RUNTIME_CHUNK: false
+  CI: true
 
 jobs:
   deploy:
