@@ -1,4 +1,4 @@
-name: Smilecare Production Deployment Workflow
+name: Smilecare Public Website Production Deployment Workflow
 
 on:
   push:
@@ -6,12 +6,13 @@ on:
       - master
 
 env:
+  CI: true
   REACT_APP_LINK: ${{ secrets.REACT_APP_LINK }}
   INLINE_RUNTIME_CHUNK: false
-  CI: true
 
 jobs:
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
