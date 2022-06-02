@@ -21,7 +21,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-          npm-version: 6.x
+      - name: Npm Version
+        uses: Reedyuk/NPM-Version@1.1.1
+        with:
+          version: 6.x
+
       - run: npm i
       - run: npm run build
       - name: Deploy to Heroku
