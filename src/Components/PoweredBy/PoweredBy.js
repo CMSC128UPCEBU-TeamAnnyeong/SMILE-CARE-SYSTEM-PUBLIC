@@ -1,12 +1,12 @@
-import React from 'react'
-import './PoweredBy.css'
-import logoSmileCareSystem from '../../Assets/logo.png';
+import React from "react"
+import "./PoweredBy.css"
+import logoSmileCareSystem from "../../Assets/logo.png"
 
 function PoweredBy() {
   return (
-    <div className='footer'>
-        <div className='poweredby-text'>POWERED BY</div>
-        <img src={logoSmileCareSystem} className="poweredby-logo"/>
+    <div className="footer">
+      <div className="poweredby-text">POWERED BYYYY</div>
+      <img src={logoSmileCareSystem} className="poweredby-logo" />
     </div>
   )
 }
