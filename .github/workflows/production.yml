@@ -24,7 +24,9 @@ jobs:
       - name: Npm Version
         uses: Reedyuk/NPM-Version@1.1.1
         with:
-          version: 6.x
+          version: "6.13.6"
+          package: "subproject-directory/"
+          git-tag-version: "true"
 
       - run: npm i
       - run: npm run build
