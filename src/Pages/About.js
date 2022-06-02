@@ -106,7 +106,7 @@ function About() {
                             <div className='service-title'>TMJ Treatment</div>
                             <div className='service-body-tmj'>☑ Splint</div>
                         </div>
-                        <div className='col-3'>
+                        <div className='col-2'>
                             <img src={cosmetic} className='service-icon-cosmetic' />
                             <div className='service-title'>Cosmetic Dentistry</div>
                             <div className='service-body-cosmetic'>☑ Teeth Whitening</div>
