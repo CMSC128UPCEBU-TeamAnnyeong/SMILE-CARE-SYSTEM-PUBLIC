@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  REACT_APP_LINK:
+  REACT_APP_LINK: ${{ secrets.REACT_APP_LINK }}
   INLINE_RUNTIME_CHUNK: false
   CI: true
 
