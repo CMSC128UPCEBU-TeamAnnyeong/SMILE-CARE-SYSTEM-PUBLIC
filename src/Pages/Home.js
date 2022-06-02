@@ -1,31 +1,31 @@
-import React from 'react'
+import React, { useState } from "react"
 import "./Home.css"
 import home from "../Assets/home.jpg"
+import { Navigate } from "react-router-dom"
 
 function Home() {
+    const [toAbout, setAbout] = useState(false)
+    if (toAbout == true) {
+        return <Navigate to={"/about"} />
+      }
   return (
     <div className="container">
         <div className="row">
-            <div className="col-sm-5">
-                <div className="row">
-                    <h1 className="home-header">We care your smile</h1>
-                    <h2 className="home-subheader">
-                        Surigao Dental Center offers full range of dental services for both adults and children.
-                    </h2>
-                </div>
+                <div className="col-sm-5">
+                    <div className="row">
+                        <h1 className="home-header">We care your smile</h1>
+                        <h2 className="home-subheader">
+                            Surigao Dental Center offers full range of dental services for both adults and children.
+                        </h2>
+                    </div>
 
-                <div className="row">
-                    <div
-                    /*className="submit-btn-cont"
-                    onClick={() => setToNewPatientForm(true)}*/
-                    >
-                    <div className="home submit-btn">Learn More</div>
-                </div>
-          </div>
+                    <div className="row">
+                        <div className="home submit-btn" onClick={() => setAbout(true)}>Learn More</div>
+                    </div>
             </div>
             <div className="col-sm-7">
-                    <img src={home} className="home-pic" />
-                </div>
+                <img src={home} className="home-pic" />
+            </div>
         </div>
     </div>
   )

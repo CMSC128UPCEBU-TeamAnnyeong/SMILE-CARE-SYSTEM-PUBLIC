@@ -13,6 +13,7 @@ import { getUser } from "./Helpers/Utils/Common"
 
 /** PAGES **/
 import Home from "./Pages/Home"
+import About from "./Pages/About"
 import ViewQueue from "./Pages/ViewQueue"
 import ViewQueueTable from "./Pages/ViewQueueTable"
 import BookAppointment from "./Pages/BookAppointment"
@@ -33,6 +34,7 @@ function App() {
             path="/book-appointment-form"
             element={<BookAppointmentForm />}
           />
+          <Route path="/about" element={<About />} />
           <Route path="/view" element={<ViewQueue />} />
           <Route path="/view/queue" element={<ViewQueueTable />} />
           <Route path="/appointment" element={<BookAppointment />} />
