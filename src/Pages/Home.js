@@ -15,7 +15,7 @@ function Home() {
                     <div className="row">
                         <h1 className="home-header">We care your smile</h1>
                         <h2 className="home-subheader">
-                            Surigao Dental Center offers full range of dental services for both adults and children.
+                            Surigao Dental Center offers a full range of dental services for both children and adults.
                         </h2>
                     </div>
 

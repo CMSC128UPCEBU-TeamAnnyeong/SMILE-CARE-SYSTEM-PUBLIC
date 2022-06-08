@@ -25,10 +25,12 @@ function About() {
             <div className='row'>
                 <div className='about-header'>Surigao Dental Center</div>
                 <div className='about-body'> Established in 2021, Surigao Dental Center is a clinic that provides safe, affordable, 
-                and effective dental treatments located in Surigao City. It offers a wide array of services from basic dental 
+                and effective dental treatments located in Surigao City. It offers a wide array of services to cater to the dental needs of Surigaonons ranging from basic dental 
                 procedures to dental specialties such as cosmetic dentistry, root canal treatments, orthodontic braces and Invisalign, 
-                oral surgeries, and dental implants to cater to the needs of the Surigaonons. The clinic is owned and operated by Dra. 
-                Ezra Delani-Sobrecaray, a licensed orthodontist.
+                oral surgeries, and dental implants. 
+                </div>
+                <div className='about-body'>The clinic is owned and operated by your friendly neighborhood dentist, Dr. 
+                Ezra Delani-Sobrecaray, a licensed dentist.
                 </div>
                 <img src={about_low} className="about-low" />
             </div>
