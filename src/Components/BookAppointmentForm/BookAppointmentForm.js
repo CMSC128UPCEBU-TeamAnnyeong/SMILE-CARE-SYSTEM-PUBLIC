@@ -117,6 +117,7 @@ function BookAppointmentForm({setAppointment, notes, setNotes}) {
                 <span className="form-label">Purpose</span>
                 <br />
                 <select>
+                    <option value="" disabled> Select </option>
                     <option value="check-up">Check-up</option>
                     <option value="follow-up">Follow-up</option>
                     <option value="others">Others</option>
@@ -134,6 +135,7 @@ function BookAppointmentForm({setAppointment, notes, setNotes}) {
                 className="remarks"
                 rows="9.8"
                 cols="90"
+                style={{padding: 15}}
                 value={notes}
                 onChange={(e) => setNotes(e.target.value)}
                 />
