@@ -6,9 +6,14 @@ import { Navigate } from "react-router-dom"
 
 function BookAppointment() {
   const [toBookAppointmentForm, setBookAppointmentForm] = useState(false)
+  const [toNewPatient, setToNewPatient] = useState(false);
 
   if (toBookAppointmentForm == true) {
-    return <Navigate to={"/book-appointment-form"} />
+    return <Navigate to={"/returning-patient-appointment"} />
+  }
+
+  if(toNewPatient === true) {
+    return <Navigate to={"/new-patient-appointment"}/>
   }
 
   return (
@@ -23,11 +28,23 @@ function BookAppointment() {
           </div>
 
           <div className="row">
+            <p className="book-subsubheader">
+              Are you a returning patient or new patient?
+            </p>
             <div
               className="submit-btn-cont"
               onClick={() => setBookAppointmentForm(true)}
             >
-              <div className="view-queue submit-btn">Create Appointment</div>
+              <div className="view-queue submit-btn">Returning Patient</div>
+              <div className="view-queue submit-btn btn-part">
+                <img src={rightArrow} className="arrow-icon" />
+              </div>
+            </div>
+            <div
+              className="submit-btn-cont"
+              onClick={() => setToNewPatient(true)}
+            >
+              <div className="view-queue submit-btn">New Patient</div>
               <div className="view-queue submit-btn btn-part">
                 <img src={rightArrow} className="arrow-icon" />
               </div>

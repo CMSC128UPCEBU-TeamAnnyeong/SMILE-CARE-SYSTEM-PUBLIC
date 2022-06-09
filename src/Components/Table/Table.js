@@ -114,7 +114,7 @@ function Table({
               " queue-cell grey-text"
               }
             >
-              {row.status}
+              {row.status === "APPROVED" ? "UPCOMING" : row.status}
             </td>
         </tr>
       )

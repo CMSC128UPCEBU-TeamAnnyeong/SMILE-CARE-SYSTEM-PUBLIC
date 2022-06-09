@@ -13,6 +13,7 @@ export const createAppointment = async (id, catergory, appointment, services, no
             appointment_date_time: appointment.appointmentDateTime,
             services: services,
             remarks: notes,
+            status: "PENDING"
         });
         return ({data:response});   
     } catch (error) {

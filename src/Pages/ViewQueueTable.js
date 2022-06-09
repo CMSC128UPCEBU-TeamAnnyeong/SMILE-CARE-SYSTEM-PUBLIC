@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Table from '../Components/Table/Table'
+import Table from '../components/Table/Table'
 import { getQueue } from '../Helpers/apiCalls/queueApi';
 import { formatDate, getTime, getToken } from '../Helpers/Utils/Common';
 

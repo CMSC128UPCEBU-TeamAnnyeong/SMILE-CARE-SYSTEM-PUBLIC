@@ -13,7 +13,7 @@ function Home() {
         <div className="row">
                 <div className="col-sm-5">
                     <div className="row">
-                        <h1 className="home-header">We care your smile</h1>
+                        <h1 className="home-header">We care for your smile</h1>
                         <h2 className="home-subheader">
                             Surigao Dental Center offers a full range of dental services for both children and adults.
                         </h2>

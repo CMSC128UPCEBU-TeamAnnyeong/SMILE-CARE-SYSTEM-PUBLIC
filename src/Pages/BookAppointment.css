@@ -13,6 +13,16 @@
     padding-left: 5% !important;    
 }
 
+.book-subsubheader {
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 5% !important;  
+    padding-top: 5%;
+    margin-bottom: -3% !important;  
+    margin-left: 1%;
+}
+
 .book-appointment-pic {
     width: 95%;
 }

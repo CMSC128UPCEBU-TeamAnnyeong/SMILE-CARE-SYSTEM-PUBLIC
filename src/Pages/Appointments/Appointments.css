@@ -1,0 +1,18 @@
+.select-status {
+    font-size: 9px;
+}
+
+.appointment-btn {
+    border: none;
+    padding: 2%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    background: #3ABFE2;
+    box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #ffff;
+}
+
+.margin-top-3 {
+    margin-top: 3%;
+}

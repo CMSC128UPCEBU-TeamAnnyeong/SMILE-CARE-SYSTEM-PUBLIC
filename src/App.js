@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import "./App.css"
-import "./Components/FontAwesomeIcons"
-import Navbar from "./Components/Navbar/Navbar"
-import PoweredBy from "./Components/PoweredBy/PoweredBy"
+import "./components/FontAwesomeIcons"
+import Navbar from "./components/Navbar/Navbar"
+import PoweredBy from "./components/PoweredBy/PoweredBy"
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,8 +17,10 @@ import About from "./Pages/About"
 import ViewQueue from "./Pages/ViewQueue"
 import ViewQueueTable from "./Pages/ViewQueueTable"
 import BookAppointment from "./Pages/BookAppointment"
-import BookAppointmentForm from "./Components/BookAppointmentForm/BookAppointmentForm"
+import BookAppointmentForm from "./components/BookAppointmentForm/BookAppointmentForm"
 import Contact from "./Pages/Contact"
+import NewPatientSwitchForm from "./Pages/Appointments/New Patient/NewPatientSwitchForm"
+import ReturningPatientSwitchForm from "./Pages/Appointments/Returning Patient/ReturningPatientSwitchForm"
 
 function App() {
   document.title = "SMILE CARE SYSTEM"
@@ -39,6 +41,22 @@ function App() {
           <Route path="/view/queue" element={<ViewQueueTable />} />
           <Route path="/appointment" element={<BookAppointment />} />
           <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/new-patient-appointment"
+            element={
+              isAuthenticated ? <NewPatientSwitchForm /> : <Navigate to="/" />
+            }
+          />
+          <Route
+            path="/returning-patient-appointment"
+            element={
+              isAuthenticated ? (
+                <ReturningPatientSwitchForm />
+              ) : (
+                <Navigate to="/" />
+              )
+            }
+          />
         </Routes>
       </Router>
       <PoweredBy />

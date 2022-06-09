@@ -1,0 +1,99 @@
+.form-card-cont {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px -5px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    padding: 3%;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    width: 98% !important; 
+    margin-top: 2% !important;
+    margin: 1%;
+}
+
+/** Form 1 **/
+.peronal-info-header {
+    font-family: 'Montserrat-Regular';
+    font-weight: 600;
+    font-size: 30px;
+    color: #45517D;
+}
+
+.personal-input-cont {
+    margin-left: 5%;
+}
+
+.form-label {
+    font-family: 'Montserrat-Bold';
+    font-size: 14px;
+    color: #45517D;
+}
+
+.form-input {
+    background: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 5px;
+    width: 100%;
+}
+
+.form-button-save {
+    border: none;
+    background: #3469E7;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 13px;
+    width: 7%;
+    margin: 1%;
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+.form-button-cancel {
+    border: none;
+    background: #3ABFE2; 
+    color: #ffffff;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 7%;
+    margin: 1%;
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+.notes {
+    background: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.remarks {
+    background: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 210%;
+    padding: 2%;
+}
+
+
+
+/* @media (max-width: 1000px){
+    .notes {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1170px){
+    .notes {
+        width: 550px;
+    }
+} */
+
+
+
+
+
