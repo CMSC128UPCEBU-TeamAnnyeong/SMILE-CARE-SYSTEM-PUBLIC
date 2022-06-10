@@ -54,22 +54,22 @@ function ReturningPatientForm1({
   } = patient
   const { appointmentDateTime, remarks } = appointment
 
-  async function submitAppointment(id) {
+  async function submitAppointment() {
     const response = await createAppointment(
-      id,
+      patientId,
       category,
       appointment,
       services,
       notes,
-      "APPROVED",
+      "PENDING",
       purpose
     )
     console.log(response)
     if (response) {
       toast.success("Successfully Added Appointment!")
-      setTimeout(function () {
-        setRedirect(true)
-      }, 2000)
+      // setTimeout(function () {
+      //   setRedirect(true)
+      // }, 2000)
     }
   }
 
@@ -87,7 +87,7 @@ function ReturningPatientForm1({
       return (
         <button
           className="form-button-next"
-          onClick={() => submitAppointment(id)}
+          onClick={() => submitAppointment()}
         >
           SAVE
         </button>
@@ -136,7 +136,7 @@ function ReturningPatientForm1({
           </button>
           <button
             className="form-button-save"
-            onClick={() => submitAppointment(id)}
+            onClick={() => submitAppointment()}
           >
             SAVE
           </button>

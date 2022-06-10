@@ -5,15 +5,14 @@ import { getAPICall, postAPICall, putAPICall, deleteAPICall } from './axiosMetho
  *****************************/
 
 //POST
-export const createAppointment = async (id, catergory, appointment, services, notes) => {
+export const createAppointment = async (id, catergory, appointment, services, notes, status, purpose) => {
     try {
         const response = await postAPICall(process.env.REACT_APP_LINK + 'appointments', {
             patient: id,
-            category: catergory,
             appointment_date_time: appointment.appointmentDateTime,
-            services: services,
             remarks: notes,
-            status: "PENDING"
+            status: "PENDING",
+            purpose: purpose,
         });
         return ({data:response});   
     } catch (error) {

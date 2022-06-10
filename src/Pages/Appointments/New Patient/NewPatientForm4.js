@@ -39,6 +39,7 @@ function NewPatientForm4({
   const [categories, setCategories] = useState([])
   const [serviceOptions, setServiceOptions] = useState([])
   const [redirect, setRedirect] = useState(false)
+  const [purpose, setPurpose] = useState("")
 
   const options = [{ label: "Root Canal", value: "" }]
 
@@ -72,7 +73,8 @@ function NewPatientForm4({
       appointment,
       services,
       notes,
-      "APPROVED"
+      "PENDING",
+      purpose
     )
     console.log(response)
     if (response) {
@@ -159,9 +161,8 @@ function NewPatientForm4({
                 <br />
                 <select
                   className="form-input category-input"
-                  name="services"
-                  
-                
+                  name="purpose"
+                  onChange={(e) => setPurpose(e.target.value)}
                 >
                   <option value="" disabled> Select </option>
                   <option value="check-up">Check-up</option>

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./App.css"
-import "./components/FontAwesomeIcons"
+// import "./components/FontAwesomeIcons"
 import Navbar from "./components/Navbar/Navbar"
 import PoweredBy from "./components/PoweredBy/PoweredBy"
 import {
