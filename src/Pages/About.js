@@ -44,24 +44,29 @@ function About() {
                         <img
                         className="d-block w-100"
                         src={about_1}
+                        height="572.5px"
                         />
+                       
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={about_2}
+                        height="572.5px"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={about_3}
+                        height="572.5px"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={about_4}
+                        height="572.5px"
                         />
                     </Carousel.Item>
                 </Carousel>
