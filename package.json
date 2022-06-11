@@ -2,10 +2,7 @@
   "name": "smile-care-public-site",
   "homepage": "https://smilecare-public.herokuapp.com/",
   "version": "0.1.0",
-  "engines": {
-    "node": "16.x",
-    "npm": "6.x"
-  },
+
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
