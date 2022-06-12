@@ -3,9 +3,6 @@ import React, { useState } from "react"
 //css
 import "./newPatient.css"
 
-//components
-import Navbar from "../../../components/Navbar/Navbar"
-
 function NewPatientForm2({
   patient,
   setPatient,
@@ -63,18 +60,7 @@ function NewPatientForm2({
 
   return (
     <div className="page">
-      <Navbar
-        onCollapse={(inactive) => {
-          setInactive(inactive)
-        }}
-        active={1} //Appointment navbar index
-      />
       <div className={`container ${inactive ? "inactive" : "active"}`}>
-        <div className="row">
-          <div className="col-sm-6">
-            <h1 className="page-title">Add Patient</h1>
-          </div>
-        </div>
         <div className="row page-content">
           <div className="medical-form-card-cont">
             <div className="row">
@@ -184,6 +170,16 @@ function NewPatientForm2({
                   No
                 </div>
               </div>
+              <div className="col-sm-8">
+                {isUnderTreatment === "yes" &&
+                  (<input
+                  type="text"
+                  onChange={setMedicalHistory}
+                  name="specifiedTreatment"
+                  className="condTextInputCont"
+                  placeholder="Condition Being Treated"
+                />)}
+              </div>
             </div>
             <div className="row mt-4">
               <div className="col-sm-8">
@@ -278,6 +274,16 @@ function NewPatientForm2({
                   No
                 </div>
               </div>
+              <div className="col-sm-8">
+                {isTakingPrescription === "yes" &&
+                  (<input
+                  type="text"
+                  onChange={setMedicalHistory}
+                  name="specifiedPrescription"
+                  className="condTextInputCont"
+                  placeholder="Please Specify"
+                />)}
+              </div>
             </div>
             <div className="row mt-4">
               <div className="col-sm-8">
@@ -348,6 +354,7 @@ function NewPatientForm2({
                   Penicillin, Antibiotics, Sulfa drugs, Aspirin, Latex,
                   Others...)?
                 </p>
+                <p></p>
                 <br />
               </div>
               <div className="col-sm-1">
@@ -373,6 +380,17 @@ function NewPatientForm2({
                   />
                   No
                 </div>
+              </div>
+              <div className="col-sm-8">
+                {isAllergictoMentionedDrugs === "yes" &&
+                  (<input
+                  type="text"
+                  onChange={setMedicalHistory}
+                  //value={amountPaid}
+                  name="specifiedAllergies"
+                  className="condTextInputCont"
+                  placeholder="Please Specify"
+                />)}
               </div>
             </div>
             <div className="row">{proceed()}</div>
