@@ -7,7 +7,6 @@ import SignatureCanvas from "react-signature-canvas"
 import "./newPatient.css"
 
 //components
-import Navbar from "../../../components/Navbar/Navbar"
 import TermsOfServiceAndPrivacyPolicy from "../../../components/TermsOfServiceAndPrivacyPolicy/TermsOfServiceAndPrivacyPolicy"
 
 function NewPatientForm3({
@@ -111,18 +110,7 @@ function NewPatientForm3({
 
   return (
     <div className="page">
-      <Navbar
-        onCollapse={(inactive) => {
-          setInactive(inactive)
-        }}
-        active={1} //Appointment navbar index
-      />
       <div className={`container ${inactive ? "inactive" : "active"}`}>
-        <div className="row">
-          <div className="col-sm-6">
-            <h1 className="page-title">Add Patient</h1>
-          </div>
-        </div>
         <div className="row page-content">
           <div className="form-card-cont">
             <div className="row">

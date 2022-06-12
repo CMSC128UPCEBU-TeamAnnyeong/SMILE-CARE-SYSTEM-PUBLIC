@@ -14,9 +14,6 @@ import { Navigate } from "react-router-dom"
 //css
 import "./newPatient.css"
 
-//components
-import Navbar from "../../../components/Navbar/Navbar"
-
 function NewPatientForm4({
   patient,
   setPatient,
@@ -131,19 +128,8 @@ function NewPatientForm4({
 
   return (
     <div className="page">
-      <Navbar
-        onCollapse={(inactive) => {
-          setInactive(inactive)
-        }}
-        active={1} //Appointment navbar index
-      />
       <ToastContainer />
       <div className={`container ${inactive ? "inactive" : "active"}`}>
-        <div className="row">
-          <div className="col-sm-6">
-            <h1 className="page-title">Add Appointment</h1>
-          </div>
-        </div>
         <div className="row page-content">
           <div className="form-card-cont">
             <div className="row mt-4">

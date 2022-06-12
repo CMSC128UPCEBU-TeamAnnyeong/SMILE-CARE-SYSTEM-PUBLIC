@@ -234,8 +234,8 @@ function NewPatientForm1({
                 </span>
                 <br />
                 <input
-                  type="text"
-                  className="form-input dental-insurance-effective-date-input"
+                  type="date"
+                  className="form-input birthdate-input"
                   name="dentalInsuranceEffectiveDate"
                   value={dentalInsuranceEffectiveDate}
                   onChange={setPatient}
