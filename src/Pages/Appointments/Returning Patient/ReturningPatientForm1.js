@@ -59,7 +59,7 @@ function ReturningPatientForm1({
 
   async function submitAppointment() {
     const response = await createAppointment(
-      patientId,
+      patient.id,
       category,
       appointment,
       services,
