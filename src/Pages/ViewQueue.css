@@ -104,3 +104,31 @@
     font-family: 'Montserrat-Regular';
     font-weight: bold;
 }
+
+.poweredby-text-queue {
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+}
+
+.poweredby-logo {
+    width: 12rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 414px){
+    .view-queue-pic {
+        position: absolute;
+        bottom:90px;
+    }
+
+    .view-header {
+        margin-top: 10% !important;
+    }
+
+    .poweredby-text-queue {
+        padding-top: 90%;
+    }
+}

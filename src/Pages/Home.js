@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./Home.css"
 import home from "../Assets/home.jpg"
+import logoSmileCareSystem from "../../src/Assets/logo.png"
 import { Navigate } from "react-router-dom"
 
 function Home() {
@@ -8,6 +9,16 @@ function Home() {
     if (toAbout == true) {
         return <Navigate to={"/about"} />
       }
+
+    function PoweredBy() {
+        return (
+            <div className="footer">
+                <div className="poweredby-text-home">POWERED BY</div>
+                <img src={logoSmileCareSystem} className="poweredby-logo" />
+            </div>
+        )
+    }
+    
   return (
     <div className="container">
         <div className="row">
@@ -27,6 +38,7 @@ function Home() {
                 <img src={home} className="home-pic" />
             </div>
         </div>
+        <PoweredBy/>
     </div>
   )
 }

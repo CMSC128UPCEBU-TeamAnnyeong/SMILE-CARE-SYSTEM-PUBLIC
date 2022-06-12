@@ -7,11 +7,30 @@
     padding-top: 10%;
 }
 
-.icon {
+.icon-address {
+    width: 40px;
+    padding-top: 10%;
+    padding-bottom: 80%;
+} 
+
+.icon-phone {
+    width: 40px;
+    padding-top: 10%;
+    padding-bottom: 80%;
+} 
+
+.icon-email {
     width: 40px;
     padding-top: 10%;
     padding-bottom: 80%;
 }
+
+.icon-fb {
+    width: 40px;
+    padding-top: 10%;
+    padding-bottom: 80%;
+}
+
 
 .label {
     font-weight: 600;
@@ -35,6 +54,15 @@ a:link {
     color: #45517d !important;
 }
 
+.label-email {
+    font-weight: 600;
+    font-size: 15px;
+    color: #45517d;
+    margin-right: 5%;
+    text-align: justify;
+    padding-top: 2%;
+}
+
 .label-fb {
     font-weight: 600;
     font-size: 15px;
@@ -56,4 +84,89 @@ a:link {
 
 .fb-link {
     color: #45517d !important;
+}
+
+.poweredby-text-contact {
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+}
+
+.poweredby-logo {
+    width: 12rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 414px){
+    .map {
+        position: absolute;
+        right: 290px;
+        margin-top: 5%;
+        
+    }
+    .map-cont {
+        position: absolute;
+        right: 15px;
+        width: 600px;
+        zoom:.65;
+        margin-top: 10%;
+    }
+
+    .icon-address {
+        padding-top: 200%;
+        padding-bottom: 30%;
+    }
+
+    .icon-phone {
+        padding-top: 10%;
+        padding-bottom: 25%;
+    } 
+
+    .icon-email {
+        padding-top: 5%;
+        padding-bottom: 25%;
+    }
+
+    .icon-fb {
+        padding-top: 5%;
+        padding-bottom: 30%;
+    }
+    
+    .label {
+        position: absolute;
+        top: 440px;
+        left: 80px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .label-phone {
+        position: absolute;
+        top: 548px;
+        left: 80px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .label-email {
+        position: absolute;
+        top: 638px;
+        left: 80px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+    
+    .fb-link {
+        position: absolute;
+        top: 736px;
+        left: 80px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+    
+    .poweredby-text-contact {
+        padding-top: -100%;
+    }
 }

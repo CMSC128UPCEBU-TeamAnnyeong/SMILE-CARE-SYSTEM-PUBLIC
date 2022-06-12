@@ -58,3 +58,28 @@
     margin-left: 3%;
     margin-top: 5% !important;
 }
+
+.poweredby-text-appointment {
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+}
+
+.poweredby-logo {
+    width: 12rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 414px){
+    .book-header {
+        font-size: 48px;
+        margin-top: 10% !important;
+    }
+
+    .poweredby-text-appointment {
+        padding-top: 5%;
+    }
+}

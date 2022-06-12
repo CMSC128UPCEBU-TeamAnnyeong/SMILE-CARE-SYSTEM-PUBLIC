@@ -4,6 +4,16 @@ import PhoneCall from "../Assets/phone-call.png"
 import Email from "../Assets/email.png"
 import Facebook from "../Assets/facebook.png"
 import './Contact.css'
+import logoSmileCareSystem from "../../src/Assets/logo.png"
+
+function PoweredBy() {
+    return (
+      <div className="footer">
+        <div className="poweredby-text-contact">POWERED BY</div>
+        <img src={logoSmileCareSystem} className="poweredby-logo" />
+      </div>
+    )
+  }
 
 function Contact() {
   return (
@@ -13,7 +23,7 @@ function Contact() {
                 <div className='contact-info'>  
                     <div className='row'>
                         <div className='col-sm-1'>
-                            <img className='icon' src={Address}/>
+                            <img className='icon-address' src={Address}/>
                         </div>
                         <div className='col-9'>
                             <div className='label'>Lamar Arcade Building, Espina corner Borromeo St., Surigao City, 8400, Surigao del Norte, Philippines</div>
@@ -22,7 +32,7 @@ function Contact() {
 
                     <div className='row'>
                         <div className='col-sm-1'>
-                            <img className='icon' src={PhoneCall}/>
+                            <img className='icon-phone' src={PhoneCall}/>
                         </div>
                         <div className='col-9'>
                             <div className='label-phone'>+63 (966) 703 5943</div>
@@ -31,10 +41,10 @@ function Contact() {
 
                     <div className='row'>
                         <div className='col-sm-1'>
-                            <img className='icon' src={Email}/>
+                            <img className='icon-email' src={Email}/>
                         </div>
                         <div className='col-9'>
-                            <div className='label-fb'>
+                            <div className='label-email'>
                                 <a href="mailto:ekdsobrecaray@yahoo.com" target='_blank'>ekdsobrecaray@yahoo.com</a>
                             </div>
                         </div>
@@ -42,7 +52,7 @@ function Contact() {
 
                     <div className='row'>
                         <div className='col-sm-1'>
-                            <img className='icon' src={Facebook}/>
+                            <img className='icon-fb' src={Facebook}/>
                         </div>
                         <div className='col-9'>
                             <div className='label-fb'>
@@ -70,6 +80,7 @@ function Contact() {
                 </div>
             </div>
         </div>
+        <PoweredBy/>
     </div>
   )
 }

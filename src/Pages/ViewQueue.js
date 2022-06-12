@@ -5,6 +5,7 @@ import { Navigate } from "react-router-dom"
 /** img **/
 import main from '../Assets/main.png';
 import rightArrow from '../Assets/right-arrow.png';
+import logoSmileCareSystem from "../../src/Assets/logo.png"
 
 function ViewQueue() {
   const [redirect, setRedirect] = useState(false);
@@ -20,6 +21,16 @@ function ViewQueue() {
 
   if(redirect === true) {
       return <Navigate to="/view/queue"/>
+  }
+
+
+  function PoweredBy() {
+    return (
+      <div className="footer">
+        <div className="poweredby-text-queue">POWERED BY</div>
+        <img src={logoSmileCareSystem} className="poweredby-logo" />
+      </div>
+    )
   }
 
   return (
@@ -48,6 +59,7 @@ function ViewQueue() {
               </div>
           </div>
       </div>
+      <PoweredBy/>
     </div>
   )
 }
