@@ -70,9 +70,9 @@ function ReturningPatientForm1({
     console.log(response)
     if (response) {
       toast.success("Successfully Added Appointment!")
-      // setTimeout(function () {
-      //   setRedirect(true)
-      // }, 2000)
+      setTimeout(function () {
+        setRedirect(true)
+      }, 2000)
     }
   }
 

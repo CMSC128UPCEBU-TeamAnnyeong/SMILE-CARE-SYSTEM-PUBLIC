@@ -11,6 +11,7 @@ import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import { Navigate } from "react-router-dom"
 import ProfileUpload from "./ProfileUpload/ProfileUpload"
+import { Modal, Button } from "bootstrap"
 
 //css
 import "./newPatient.css"
@@ -37,8 +38,13 @@ function NewPatientForm4({
   const [categories, setCategories] = useState([])
   const [serviceOptions, setServiceOptions] = useState([])
   const [redirect, setRedirect] = useState(false)
+  const [showToken, setShowToken] = useState(false)
   const [purpose, setPurpose] = useState("")
   const [profilePicture, setProfilePicture] = useState("")
+  const [token, setToken] = useState({
+    appointment_token:"",
+    patient_short_id:""
+  })
 
 
   const options = [{ label: "Root Canal", value: "" }]
@@ -100,6 +106,51 @@ function NewPatientForm4({
     }
   }
 
+  const handleShowToken = () => {
+    setToken({
+      appointment_token: "",
+      patient_short_id: ""
+    })
+    setShowToken(true)
+  }
+
+  const renderToken = () => {
+    if (!token.appointment_token || !token.patient_short_id) return null
+
+    return (
+      <Modal show={true} onHide={handleShowToken} on size="m">
+        {/* <Modal.Header closeButton>
+          <Modal.Title>{`Appointment Token & Patient ID`}</Modal.Title>
+        </Modal.Header> */}
+        <Modal.Body>
+          <div style={{ textAlign: "center" }}>
+            <div className="appointment-token mb-5">
+              <Modal.Title>Appointment Token</Modal.Title>
+              <div
+                style={{ fontSize: 22, fontWeight: "bold", letterSpacing: 4 }}
+              >
+                {token.appointment_token}
+              </div>
+            </div>
+            <div className="patient-id">
+              <Modal.Title>Patient ID</Modal.Title>
+              <div
+                style={{ fontSize: 22, fontWeight: "bold", letterSpacing: 4 }}
+              >
+                {token.patient_short_id}
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleShowToken}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    )
+  }
+
   async function fetchCategories() {
     categories.length = 0
     const response = await getCategories()
@@ -135,8 +186,13 @@ function NewPatientForm4({
     return <Navigate to={"/appointment"} />
   }
 
+  if (showToken == true) {
+    return <Navigate to={"/appointment"} />
+  }
+
   return (
     <div className="page">
+      {renderToken()}
       <ToastContainer />
       <div className={`container ${inactive ? "inactive" : "active"}`}>
         <div className="row">
