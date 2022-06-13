@@ -113,11 +113,11 @@ function NewPatientForm2({
             </div>
             <div className="row mt-4">
               <div className="col-sm-8">
-                <p className="questions">Are you in good health?</p>
+                <p className="questions-1">Are you in good health?</p>
                 <br />
               </div>
               <div className="col-sm-1">
-                <div className="response-yes">
+                <div className="response-yes-1">
                   <input
                     type="radio"
                     name="inGoodHealth"
@@ -129,7 +129,7 @@ function NewPatientForm2({
                 </div>
               </div>
               <div className="col-sm-1">
-                <div className="response-no">
+                <div className="response-no-1">
                   <input
                     type="radio"
                     name="inGoodHealth"
@@ -143,11 +143,11 @@ function NewPatientForm2({
             </div>
             <div className="row mt-4">
               <div className="col-sm-8">
-                <p className="questions">Are you under treatment now?</p>
+                <p className="questions-2">Are you under treatment now?</p>
                 <br />
               </div>
               <div className="col-sm-1">
-                <div className="response-yes">
+                <div className="response-yes-2">
                   <input
                     type="radio"
                     name="isUnderTreatment"
@@ -159,7 +159,7 @@ function NewPatientForm2({
                 </div>
               </div>
               <div className="col-sm-1">
-                <div className="response-no">
+                <div className="response-no-2">
                   <input
                     type="radio"
                     name="isUnderTreatment"
@@ -176,20 +176,20 @@ function NewPatientForm2({
                   type="text"
                   onChange={setMedicalHistory}
                   name="specifiedTreatment"
-                  className="condTextInputCont"
+                  className="condTextInputCont-2"
                   placeholder="Condition Being Treated"
                 />)}
               </div>
             </div>
             <div className="row mt-4">
               <div className="col-sm-8">
-                <p className="questions">
+                <p className="questions-3">
                   Have you ever had serious illness or surgical operation?
                 </p>
                 <br />
               </div>
               <div className="col-sm-1">
-                <div className="response-yes">
+                <div className="response-yes-3">
                   <input
                     type="radio"
                     name="hasIllnessOrSurgery"
@@ -201,7 +201,7 @@ function NewPatientForm2({
                 </div>
               </div>
               <div className="col-sm-1">
-                <div className="response-no">
+                <div className="response-no-3">
                   <input
                     type="radio"
                     name="hasIllnessOrSurgery"
@@ -215,11 +215,11 @@ function NewPatientForm2({
             </div>
             <div className="row mt-4">
               <div className="col-sm-8">
-                <p className="questions">Have you ever been hospitalize?</p>
+                <p className="questions-4">Have you ever been hospitalize?</p>
                 <br />
               </div>
               <div className="col-sm-1">
-                <div className="response-yes">
+                <div className="response-yes-4">
                   <input
                     type="radio"
                     name="isHospitalized"
@@ -231,7 +231,7 @@ function NewPatientForm2({
                 </div>
               </div>
               <div className="col-sm-1">
-                <div className="response-no">
+                <div className="response-no-4">
                   <input
                     type="radio"
                     name="isHospitalized"
@@ -245,13 +245,13 @@ function NewPatientForm2({
             </div>
             <div className="row mt-4">
               <div className="col-sm-8">
-                <p className="questions">
+                <p className="questions-5">
                   Are you taking any prescription/non-prescription medication?
                 </p>
                 <br />
               </div>
               <div className="col-sm-1">
-                <div className="response-yes">
+                <div className="response-yes-5">
                   <input
                     type="radio"
                     name="isTakingPrescription"
@@ -263,7 +263,7 @@ function NewPatientForm2({
                 </div>
               </div>
               <div className="col-sm-1">
-                <div className="response-no">
+                <div className="response-no-5">
                   <input
                     type="radio"
                     name="isTakingPrescription"
@@ -280,18 +280,18 @@ function NewPatientForm2({
                   type="text"
                   onChange={setMedicalHistory}
                   name="specifiedPrescription"
-                  className="condTextInputCont"
+                  className="condTextInputCont-5"
                   placeholder="Please Specify"
                 />)}
               </div>
             </div>
             <div className="row mt-4">
               <div className="col-sm-8">
-                <p className="questions">Do you use Tabacco products?</p>
+                <p className="questions-6">Do you use Tabacco products?</p>
                 <br />
               </div>
               <div className="col-sm-1">
-                <div className="response-yes">
+                <div className="response-yes-6">
                   <input
                     type="radio"
                     name="isUsingTabacco"
@@ -303,7 +303,7 @@ function NewPatientForm2({
                 </div>
               </div>
               <div className="col-sm-1">
-                <div className="response-no">
+                <div className="response-no-6">
                   <input
                     type="radio"
                     name="isUsingTabacco"
@@ -317,13 +317,13 @@ function NewPatientForm2({
             </div>
             <div className="row mt-4">
               <div className="col-sm-8">
-                <p className="questions">
+                <p className="questions-7">
                   Do you use alcohol, cocaine or other dangerous drugs?
                 </p>
                 <br />
               </div>
               <div className="col-sm-1">
-                <div className="response-yes">
+                <div className="response-yes-7">
                   <input
                     type="radio"
                     name="isUsingDangerousDrugs"
@@ -335,7 +335,7 @@ function NewPatientForm2({
                 </div>
               </div>
               <div className="col-sm-1">
-                <div className="response-no">
+                <div className="response-no-7">
                   <input
                     type="radio"
                     name="isUsingDangerousDrugs"
@@ -349,7 +349,7 @@ function NewPatientForm2({
             </div>
             <div className="row mt-4">
               <div className="col-sm-8">
-                <p className="questions">
+                <p className="questions-8">
                   Are you allergic to any of the following (Local Anesthetic,
                   Penicillin, Antibiotics, Sulfa drugs, Aspirin, Latex,
                   Others...)?
@@ -358,7 +358,7 @@ function NewPatientForm2({
                 <br />
               </div>
               <div className="col-sm-1">
-                <div className="response-yes">
+                <div className="response-yes-8">
                   <input
                     type="radio"
                     name="isAllergictoMentionedDrugs"
@@ -370,7 +370,7 @@ function NewPatientForm2({
                 </div>
               </div>
               <div className="col-sm-1">
-                <div className="response-no">
+                <div className="response-no-8">
                   <input
                     type="radio"
                     name="isAllergictoMentionedDrugs"
@@ -388,7 +388,7 @@ function NewPatientForm2({
                   onChange={setMedicalHistory}
                   //value={amountPaid}
                   name="specifiedAllergies"
-                  className="condTextInputCont"
+                  className="condTextInputCont-8"
                   placeholder="Please Specify"
                 />)}
               </div>

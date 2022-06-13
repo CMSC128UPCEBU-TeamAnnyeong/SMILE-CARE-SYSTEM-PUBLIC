@@ -55,7 +55,7 @@
     margin-right: auto;
 }
 
-@media (max-width: 414px){
+@media (max-width: 400px){
     .home.submit-btn {
         width: 40%;
     }
@@ -65,6 +65,6 @@
     }
 
     .poweredby-text-home {
-        padding-top: 5%;
+        padding-top: 7%;
     }
 }

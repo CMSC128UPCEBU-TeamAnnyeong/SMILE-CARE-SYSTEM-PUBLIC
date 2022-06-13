@@ -11,7 +11,7 @@
 }
 
 /** Form 1 **/
-.peronal-info-header {
+.personal-info-header {
   font-family: "Montserrat-Regular";
   font-weight: 600;
   font-size: 30px;
@@ -121,7 +121,7 @@
   color: #45517d;
 }
 
-.questions {
+.questions-1 {
   font-family: "Montserrat-Bold";
   font-size: 15px;
   line-height: auto;
@@ -129,7 +129,71 @@
   color: #45517d;
 }
 
-.condTextInputCont {
+.questions-2 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  line-height: auto;
+  margin-bottom: -5%;
+  color: #45517d;
+}
+
+.questions-3 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  line-height: auto;
+  margin-bottom: -5%;
+  color: #45517d;
+}
+
+.questions-4 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  line-height: auto;
+  margin-bottom: -5%;
+  color: #45517d;
+}
+
+.questions-4 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  line-height: auto;
+  margin-bottom: -5%;
+  color: #45517d;
+}
+
+.questions-5 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  line-height: auto;
+  margin-bottom: -5%;
+  color: #45517d;
+}
+
+.questions-6 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  line-height: auto;
+  margin-bottom: -5%;
+  color: #45517d;
+}
+
+.questions-7 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  line-height: auto;
+  margin-bottom: -5%;
+  color: #45517d;
+}
+
+.questions-8 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  line-height: auto;
+  margin-bottom: -5%;
+  color: #45517d;
+}
+
+.condTextInputCont-2 {
   background: #ffffff;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
@@ -139,7 +203,27 @@
   margin-top: 10px;
 }
 
-.response-yes {
+.condTextInputCont-5 {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 5px;
+  width: 785px;
+  margin-top: 10px;
+}
+
+.condTextInputCont-8 {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 5px;
+  width: 785px;
+  margin-top: 10px;
+}
+
+.response-yes-1 {
   font-family: "Montserrat-Bold";
   font-size: 15px;
   color: #45517d;
@@ -151,7 +235,175 @@
   gap: 1em;
 }
 
-.response-no {
+.response-no-1 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 100%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-yes-2 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 50%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-no-2 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 100%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-yes-3 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 50%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-no-3 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 100%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-yes-4 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 50%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-no-4 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 100%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-yes-5 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 50%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-no-5 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 100%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-yes-6 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 50%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-no-6 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 100%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-yes-7 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 50%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-no-7 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 100%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-yes-8 {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+  line-height: 1.8;
+  display: grid;
+  margin-left: 50%;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+
+.response-no-8 {
   font-family: "Montserrat-Bold";
   font-size: 15px;
   color: #45517d;
@@ -292,4 +544,183 @@ input[type="radio"]:checked {
 
 .category-input {
   padding: 2.3% !important;
+}
+
+@media (max-width: 400px){
+  .personal-info-header {
+    text-align: center;
+  }
+
+  .medical-info-header {
+    text-align: center;
+  }
+
+  .questions-1 {
+    position: absolute;
+    top: 60%;
+    margin-left: 0%;
+  }
+
+  .response-yes-1 {
+    position: absolute;
+    top: 620px;
+    margin-left: 20%;
+  }
+  
+  .response-no-1 {
+    position: absolute;
+    top: 620px;
+    margin-left: 50%;
+  }
+
+  .questions-2 {
+    position: absolute;
+    top: 68%;
+    margin-left: 0%;
+  }
+
+  .response-yes-2 {
+    position: absolute;
+    top: 705px;
+    margin-left: 20%;
+  }
+  
+  .response-no-2 {
+    position: absolute;
+    top: 705px;
+    margin-left: 50%;
+  }
+
+  .condTextInputCont-2 {
+    width: 300px;
+    margin-top: 80px;
+  }
+
+  .questions-3 {
+    position: absolute;
+    top: 80%;
+    margin-left: 0%;
+  }
+
+  .response-yes-3 {
+    position: absolute;
+    top: 86%;
+    margin-left: 20%;
+  }
+  
+  .response-no-3 {
+    position: absolute;
+    top: 86%;
+    margin-left: 50%;
+  }
+
+  .questions-4 {
+    position: absolute;
+    top: 90%;
+    margin-left: 0%;
+  }
+
+  .response-yes-4 {
+    position: absolute;
+    top: 94%;
+    margin-left: 20%;
+  }
+  
+  .response-no-4 {
+    position: absolute;
+    top: 94%;
+    margin-left: 50%;
+  }
+
+  .questions-5 {
+    position: absolute;
+    top: 98%;
+    margin-left: 0%;
+  }
+
+  .response-yes-5 {
+    position: absolute;
+    top: 104%;
+    margin-left: 20%;
+  }
+  
+  .response-no-5 {
+    position: absolute;
+    top: 104%;
+    margin-left: 50%;
+  }
+
+  .condTextInputCont-5 {
+    width: 300px;
+    margin-top: 134px;
+  }
+
+  .questions-6 {
+    position: absolute;
+    top: 112%;
+    margin-left: 0%;
+  }
+
+  .response-yes-6 {
+    position: absolute;
+    top: 115%;
+    margin-left: 20%;
+  }
+  
+  .response-no-6 {
+    position: absolute;
+    top: 115%;
+    margin-left: 50%;
+  }
+
+  .questions-7 {
+    position: absolute;
+    top: 118%;
+    margin-left: 0%;
+  }
+
+  .response-yes-7 {
+    position: absolute;
+    top: 124%;
+    margin-left: 20%;
+  }
+  
+  .response-no-7 {
+    position: absolute;
+    top: 124%;
+    margin-left: 50%;
+  }
+
+  .questions-8 {
+    position: absolute;
+    top: 128%;
+    margin-left: 0%;
+  }
+
+  .response-yes-8 {
+    position: absolute;
+    top: 136%;
+    margin-left: 20%;
+  }
+  
+  .response-no-8 {
+    position: absolute;
+    top: 136%;
+    margin-left: 50%;
+  }
+
+  .condTextInputCont-8 {
+    width: 300px;
+    margin-top: 120px;
+    margin-bottom: 4%;
+  }
+
+  .form-button-next {
+    width: 25%;
+  }
+  
+  .form-button-previous {
+    width: 25%;
+  }
+
 }

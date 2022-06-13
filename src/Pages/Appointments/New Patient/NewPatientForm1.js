@@ -73,7 +73,7 @@ function NewPatientForm1({
         <div className="row page-content">
           <div className="form-card-cont">
             <div className="row">
-              <h1 className="peronal-info-header">Personal Information</h1>
+              <h1 className="personal-info-header">Personal Information</h1>
             </div>
             <div className="row mt-4">
               <div className="col-sm-4">

@@ -118,7 +118,7 @@
     margin-right: auto;
 }
 
-@media (max-width: 414px){
+@media (max-width: 400px){
     .view-queue-pic {
         position: absolute;
         bottom:90px;

@@ -330,13 +330,14 @@ html,body {
     margin-right: auto;
 }
 
-@media (max-width: 414px){
+@media (max-width: 400px){
     .about-cont {
         max-height: 572.5px;
        
     }
     .about-header {
-        font-size: 45px;
+        font-size: 43px;
+        text-align: justify;
     }
     
     .about-body {
@@ -487,7 +488,7 @@ html,body {
     .service-body-gen-den-1 {
         position: absolute;
         top: 770px;
-        left: 40px;
+        left: 37px;
         margin-right: 15%;
         text-align: justify;
     }
@@ -495,7 +496,7 @@ html,body {
     .service-body-gen-den-2 {
         position: absolute;
         top: 790px;
-        left: 40px;
+        left: 37px;
         margin-right: 15%;
         text-align: justify;
     }
@@ -503,7 +504,7 @@ html,body {
     .service-body-gen-den-3 {
         position: absolute;
         top: 810px;
-        left: 40px;
+        left: 37px;
         margin-right: 15%;
         text-align: justify;
     }
@@ -511,7 +512,7 @@ html,body {
     .service-body-prostho-1 {
         position: absolute;
         top: 870px;
-        left: 20px;
+        left: 17px;
         margin-right: 15%;
         text-align: justify;
     }
@@ -519,7 +520,7 @@ html,body {
     .service-body-prostho-2 {
         position: absolute;
         top: 890px;
-        left: 20px;
+        left: 17px;
         margin-right: 15%;
         text-align: justify;
     }
@@ -527,7 +528,7 @@ html,body {
     .service-body-endo-1 {
         position: absolute;
         top: 955px;
-        left: 3px;
+        left: 0px;
         margin-right: 15%;
         text-align: justify;
     }
@@ -535,7 +536,7 @@ html,body {
     .service-body-endo-2 {
         position: absolute;
         top: 975px;
-        left: 3px;
+        left: 0px;
         margin-right: 15%;
         text-align: justify;
     }
@@ -552,7 +553,7 @@ html,body {
         position: absolute;
         top: 1060px;
         left: 5px;
-        right: 84px;
+        right: 20px;
         margin-right: 15%;
         text-align: left;
     }
@@ -568,7 +569,7 @@ html,body {
 
     .service-body-ortho-4 {
         position: absolute;
-        top: 1143px;
+        top: 1145px;
         left: 5px;
         margin-right: 15%;
         text-align: justify;
@@ -576,7 +577,7 @@ html,body {
 
     .service-body-ortho-5 {
         position: absolute;
-        top: 1163px;
+        top: 1165px;
         left: 5px;
         margin-right: 15%;
         text-align: justify;
@@ -633,38 +634,38 @@ html,body {
     .store-cont {
         position: absolute;
         top: 1480px;
-        height: 15%;
+        height: 14%;
     }
 
     .clock {
         position: absolute;
-        right: 67%;
-        top: 2%;
+        right: 65%;
+        bottom: 4%;
         width: 30%;
     }
 
     .clinic-hour-header {
         font-size: 35px;
         position: absolute;
-        bottom: 60%;
-        right: 18%;
+        bottom: 56%;
+        right: 12%;
     }
     
     .clinic-hour-subheader {
         font-size: 20px;
         position: absolute;
-        top: 40%;
-        right: 19%;
+        top: 42%;
+        right: 13.5%;
     }
 
     .clinic-hour-subsubheader {
         font-size: 20px;
         position: absolute;
-        bottom: 10%;
-        right: 24%;
+        bottom: 6%;
+        right: 18%;
     }
 
     .poweredby-text-about {
-        padding-top: 223%;
+        padding-top: 227%;
     }
 }

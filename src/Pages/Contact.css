@@ -99,16 +99,16 @@ a:link {
     margin-right: auto;
 }
 
-@media (max-width: 414px){
+@media (max-width: 400px){
     .map {
         position: absolute;
-        right: 290px;
+        right: 286px;
         margin-top: 5%;
         
     }
     .map-cont {
         position: absolute;
-        right: 15px;
+        right: 6px;
         width: 600px;
         zoom:.65;
         margin-top: 10%;
@@ -136,7 +136,7 @@ a:link {
     
     .label {
         position: absolute;
-        top: 440px;
+        top: 425px;
         left: 80px;
         margin-right: 15%;
         text-align: justify;
@@ -144,7 +144,7 @@ a:link {
 
     .label-phone {
         position: absolute;
-        top: 548px;
+        top: 530px;
         left: 80px;
         margin-right: 15%;
         text-align: justify;
@@ -152,7 +152,7 @@ a:link {
 
     .label-email {
         position: absolute;
-        top: 638px;
+        top: 620px;
         left: 80px;
         margin-right: 15%;
         text-align: justify;
@@ -160,13 +160,13 @@ a:link {
     
     .fb-link {
         position: absolute;
-        top: 736px;
+        top: 717px;
         left: 80px;
         margin-right: 15%;
         text-align: justify;
     }
     
     .poweredby-text-contact {
-        padding-top: -100%;
+        padding-top: -200%;
     }
 }
