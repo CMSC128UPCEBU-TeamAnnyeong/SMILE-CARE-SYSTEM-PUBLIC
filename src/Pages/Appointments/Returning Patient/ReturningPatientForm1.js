@@ -272,7 +272,7 @@ function ReturningPatientForm1({
                       name="services"
                       onChange={(e) => setPurpose(e.target.value)}
                     >
-                      <option value=""> Select </option>
+                      <option value="" disabled> Select </option>
                       <option value="check-up">Check-up</option>
                       <option value="follow-up">Follow-up</option>
                       <option value="others">Others</option>
@@ -335,7 +335,7 @@ function ReturningPatientForm1({
                         id="notes"
                         name="remarks"
                         className="remarks"
-                        rows="9"
+                        rows="6"
                         cols="90"
                         value={notes}
                         onChange={(e) => setNotes(e.target.value)}
