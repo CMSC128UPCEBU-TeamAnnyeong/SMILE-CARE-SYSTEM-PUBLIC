@@ -39,7 +39,7 @@ function NewPatientForm4({
   const [serviceOptions, setServiceOptions] = useState([])
   const [redirect, setRedirect] = useState(false)
   const [showToken, setShowToken] = useState(false)
-  const [purpose, setPurpose] = useState("")
+  const [purpose, setPurpose] = useState("check-up")
   const [profilePicture, setProfilePicture] = useState("")
   const [token, setToken] = useState({
     appointment_token: "",
@@ -305,11 +305,8 @@ function NewPatientForm4({
                       name="purpose"
                       onChange={(e) => setPurpose(e.target.value)}
                     >
-                      <option value="" selected>
-                        {" "}
-                        Select{" "}
-                      </option>
-                      <option value="check-up">Check-up</option>
+                      <option value="" disabled> Select </option>
+                      <option value="check-up" selected>Check-up</option>
                       <option value="follow-up">Follow-up</option>
                       <option value="others">Others</option>
                       {serviceOptions.map((data, index) => {
@@ -328,7 +325,7 @@ function NewPatientForm4({
                     id="notes"
                     name="notes"
                     className="notesNewPatient"
-                    rows="10"
+                    rows="9"
                     cols="115"
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
