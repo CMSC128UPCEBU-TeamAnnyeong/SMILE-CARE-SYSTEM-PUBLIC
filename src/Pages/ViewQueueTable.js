@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Table from '../components/Table/Table'
 import { getQueue } from '../Helpers/apiCalls/queueApi';
 import { formatDate, getTime, getToken } from '../Helpers/Utils/Common';
+import logoSmileCareSystem from "../../src/Assets/logo.png"
 
 var mockData = [
   {
@@ -56,6 +57,14 @@ function ViewQueueTable() {
     fetchQueue();
   },[]);
 
+  function PoweredBy() {
+    return (
+      <div className="footer">
+        <div className="poweredby-text-table">POWERED BY</div>
+        <img src={logoSmileCareSystem} className="poweredby-logo" />
+      </div>
+    )
+  }
 
   return (
     <div>
@@ -85,6 +94,7 @@ function ViewQueueTable() {
         rowsPerPage={10}
       />
       </div>
+      <PoweredBy/>
     </div>
   )
 }

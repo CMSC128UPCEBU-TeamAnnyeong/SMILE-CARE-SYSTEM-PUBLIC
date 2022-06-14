@@ -111,6 +111,12 @@
     font-size: 12px;
 }
 
+.poweredby-text-table {
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+}
+
 .poweredby-logo {
     width: 12rem;
     display:block;
