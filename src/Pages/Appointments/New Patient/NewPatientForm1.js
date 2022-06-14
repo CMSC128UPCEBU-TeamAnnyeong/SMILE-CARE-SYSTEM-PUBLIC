@@ -42,7 +42,6 @@ function NewPatientForm1({
     if (
       firstName != "" &&
       lastName != "" &&
-      middleName != "" &&
       birthDate != "" &&
       sex != "" &&
       religion != "" &&

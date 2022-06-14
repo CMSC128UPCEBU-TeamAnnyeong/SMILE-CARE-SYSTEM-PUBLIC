@@ -195,13 +195,13 @@ function NewPatientForm4({
       {renderToken()}
       <ToastContainer />
       <div className={`container ${inactive ? "inactive" : "active"}`}>
-        <div className="row">
-          <div className="col-sm-6">
-            <h1 className="page-title">Add Appointment</h1>
-          </div>
-        </div>
         <div className="row page-content">
           <div className="form-card-cont">
+          <div className="row">
+              <h1 className="peronal-info-header">
+                Add Appointment
+              </h1>
+            </div>
             <div className="row">
               <div className="col-sm-4">
                 <div>
