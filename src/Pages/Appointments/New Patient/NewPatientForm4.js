@@ -245,10 +245,11 @@ function NewPatientForm4({
   }
 
   const renderButtons = () => {
-    if (!appointmentDateTime) {
+    if (!appointmentDateTime && purpose == "") {
       return
     }
 
+    
     return (
       <div className="add-appointment-buttons">
         <button className="button back" onClick={() => navigation.previous()}>
@@ -336,7 +337,7 @@ function NewPatientForm4({
               </div>
             </div>
 
-            {renderBody()}
+            {/* {renderBody()} */}
             {renderButtons()}
           </div>
         </div>
