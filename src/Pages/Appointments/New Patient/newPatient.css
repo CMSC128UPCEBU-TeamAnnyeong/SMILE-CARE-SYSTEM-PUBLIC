@@ -97,6 +97,7 @@
   font-weight: 600;
   font-size: 36px;
   color: #45517d;
+  margin-bottom: 20px;
 }
 
 .medical-input-cont {
@@ -115,304 +116,144 @@
   color: #45517d;
 }
 
-.current-condition {
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.section-title {
   font-family: "Montserrat-Bold";
   font-size: 24px;
   color: #45517d;
 }
 
-.questions-1 {
+.section-body {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .previous-physician-fields {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .previous-physician-fields {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .previous-physician-fields {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+}
+
+.previous-physician-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.previous-physician-field-title {
   font-family: "Montserrat-Bold";
   font-size: 15px;
-  line-height: auto;
-  margin-bottom: -5%;
   color: #45517d;
 }
 
-.questions-2 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  line-height: auto;
-  margin-bottom: -5%;
-  color: #45517d;
-}
-
-.questions-3 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  line-height: auto;
-  margin-bottom: -5%;
-  color: #45517d;
-}
-
-.questions-4 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  line-height: auto;
-  margin-bottom: -5%;
-  color: #45517d;
-}
-
-.questions-4 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  line-height: auto;
-  margin-bottom: -5%;
-  color: #45517d;
-}
-
-.questions-5 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  line-height: auto;
-  margin-bottom: -5%;
-  color: #45517d;
-}
-
-.questions-6 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  line-height: auto;
-  margin-bottom: -5%;
-  color: #45517d;
-}
-
-.questions-7 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  line-height: auto;
-  margin-bottom: -5%;
-  color: #45517d;
-}
-
-.questions-8 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  line-height: auto;
-  margin-bottom: -5%;
-  color: #45517d;
-}
-
-.condTextInputCont-2 {
+.previous-physician-field-input {
   background: #ffffff;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
   border-radius: 6px;
   padding: 5px;
-  width: 785px;
-  margin-top: 10px;
 }
 
-.condTextInputCont-5 {
+.question-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.question {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  width: 80%;
+}
+
+.choices {
+  display: flex;
+  gap: 30px;
+}
+
+.choice {
+  display: flex;
+  gap: 6px;
+}
+
+.choice .text {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  color: #45517d;
+  font-weight: bold;
+}
+
+.specific-details-section {
   background: #ffffff;
-  border: 2px solid #e5e5e5;
-  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.specific-details-section input {
+  width: 100%;
   border-radius: 6px;
   padding: 5px;
-  width: 785px;
-  margin-top: 10px;
-}
-
-.condTextInputCont-8 {
-  background: #ffffff;
   border: 2px solid #e5e5e5;
-  box-sizing: border-box;
-  border-radius: 6px;
-  padding: 5px;
-  width: 785px;
-  margin-top: 10px;
 }
 
-.response-yes-1 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 50%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.response-no-1 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 100%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
+.button {
+  border: none;
+  color: #ffffff;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 13px;
 }
 
-.response-yes-2 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 50%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
+.button.next {
+  background: #3469e7;
 }
 
-.response-no-2 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 100%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-yes-3 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 50%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-no-3 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 100%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-yes-4 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 50%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-no-4 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 100%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-yes-5 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 50%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-no-5 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 100%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-yes-6 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 50%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-no-6 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 100%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-yes-7 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 50%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-no-7 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 100%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-yes-8 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 50%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
-}
-
-.response-no-8 {
-  font-family: "Montserrat-Bold";
-  font-size: 15px;
-  color: #45517d;
-  font-weight: bold;
-  line-height: 1.8;
-  display: grid;
-  margin-left: 100%;
-  grid-template-columns: 2em auto;
-  gap: 1em;
+.button.back {
+  background: #3abfe2;
 }
 
 input[type="radio"] {
@@ -440,38 +281,6 @@ input[type="radio"] {
 /* appearance for checked radiobutton */
 input[type="radio"]:checked {
   background-color: #45517d;
-}
-
-/* optional styles, I'm using this for centering radiobuttons */
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.form-button-next {
-  border: none;
-  background: #3469e7;
-  color: #ffffff;
-  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  padding: 13px;
-  width: 7%;
-  margin: 1%;
-  margin-top: 3%;
-  font-size: 14px;
-}
-
-.form-button-previous {
-  border: none;
-  background: #3abfe2;
-  color: #ffffff;
-  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  padding: 13px;
-  width: 7%;
-  margin: 1%;
-  margin-top: 3%;
-  font-size: 14px;
 }
 
 /** Form 3 **/
@@ -546,7 +355,7 @@ input[type="radio"]:checked {
   padding: 2.3% !important;
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
   .personal-info-header {
     text-align: center;
   }
@@ -566,7 +375,7 @@ input[type="radio"]:checked {
     top: 620px;
     margin-left: 20%;
   }
-  
+
   .response-no-1 {
     position: absolute;
     top: 620px;
@@ -584,7 +393,7 @@ input[type="radio"]:checked {
     top: 705px;
     margin-left: 20%;
   }
-  
+
   .response-no-2 {
     position: absolute;
     top: 705px;
@@ -607,7 +416,7 @@ input[type="radio"]:checked {
     top: 86%;
     margin-left: 20%;
   }
-  
+
   .response-no-3 {
     position: absolute;
     top: 86%;
@@ -625,7 +434,7 @@ input[type="radio"]:checked {
     top: 94%;
     margin-left: 20%;
   }
-  
+
   .response-no-4 {
     position: absolute;
     top: 94%;
@@ -643,7 +452,7 @@ input[type="radio"]:checked {
     top: 104%;
     margin-left: 20%;
   }
-  
+
   .response-no-5 {
     position: absolute;
     top: 104%;
@@ -666,7 +475,7 @@ input[type="radio"]:checked {
     top: 115%;
     margin-left: 20%;
   }
-  
+
   .response-no-6 {
     position: absolute;
     top: 115%;
@@ -684,7 +493,7 @@ input[type="radio"]:checked {
     top: 124%;
     margin-left: 20%;
   }
-  
+
   .response-no-7 {
     position: absolute;
     top: 124%;
@@ -702,7 +511,7 @@ input[type="radio"]:checked {
     top: 136%;
     margin-left: 20%;
   }
-  
+
   .response-no-8 {
     position: absolute;
     top: 136%;
@@ -718,9 +527,8 @@ input[type="radio"]:checked {
   .form-button-next {
     width: 25%;
   }
-  
+
   .form-button-previous {
     width: 25%;
   }
-
 }
