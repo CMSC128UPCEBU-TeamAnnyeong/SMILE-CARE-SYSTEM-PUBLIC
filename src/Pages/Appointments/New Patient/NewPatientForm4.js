@@ -42,10 +42,9 @@ function NewPatientForm4({
   const [purpose, setPurpose] = useState("")
   const [profilePicture, setProfilePicture] = useState("")
   const [token, setToken] = useState({
-    appointment_token:"",
-    patient_short_id:""
+    appointment_token: "",
+    patient_short_id: ""
   })
-
 
   const options = [{ label: "Root Canal", value: "" }]
 
@@ -90,13 +89,14 @@ function NewPatientForm4({
     )
     console.log(response)
     if (response) {
-      toast.success("Successfully Added Appointment!")    // This never shows up idk why
+      toast.success("Successfully Added Appointment!") // This never shows up idk why
       // setTimeout(function () {
       //   setRedirect(true)
       // }, 2000)
     }
   }
 
+<<<<<<< HEAD
 
   function proceed() {
     if (appointmentDateTime != "" && purpose != "") {
@@ -108,6 +108,8 @@ function NewPatientForm4({
     } 
   }
 
+=======
+>>>>>>> 804cf55faec5b0f2f580bca5140bab5ac5ad50b2
   const handleShowToken = () => {
     setToken({
       appointment_token: "",
@@ -184,12 +186,82 @@ function NewPatientForm4({
   }, [category])
 
   console.log(redirect)
-  if (redirect == true) {
+  if (redirect === true) {
     return <Navigate to={"/appointment"} />
   }
 
-  if (showToken == true) {
+  if (showToken === true) {
     return <Navigate to={"/appointment"} />
+  }
+
+  const renderBody = () => {
+    return (
+      <div className="add-appointment-section-body">
+        <div className="profile-picture">
+          <div className="form-label">Profile Picture</div>
+          <ProfileUpload
+            setProfilePicture={setProfilePicture}
+            profilePicture={profilePicture}
+          />
+        </div>
+        <div className="inputs">
+          <div className="top-section-inputs">
+            <div className="input">
+              <div className="title">Appointment Date Time</div>
+              <DateTimePicker
+                className="datetime-picker"
+                onChange={onChange}
+                value={value}
+              />
+            </div>
+            <div className="input">
+              <div className="title">Purpose</div>
+              <select name="services" className="purposes">
+                <option value="" disabled>
+                  Select{" "}
+                </option>
+                <option value="check-up">Check-up</option>
+                <option value="follow-up">Follow-up</option>
+                <option value="others">Others</option>
+                {serviceOptions.map((data, index) => {
+                  return <option value={data.label}>{data.label}</option>
+                })}
+              </select>
+            </div>
+          </div>
+          <div className="bottom-section-inputs">
+            <div className="input">
+              <div className="title">Remarks / Notes</div>
+              <textarea
+                id="notes"
+                name="notes"
+                rows="9"
+                cols="50"
+                value={notes}
+                onChange={(e) => setNotes(e.target.value)}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  const renderButtons = () => {
+    if (!appointmentDateTime) {
+      return
+    }
+
+    return (
+      <div className="add-appointment-buttons">
+        <button className="button back" onClick={() => navigation.previous()}>
+          BACK
+        </button>
+        <button className="button next" onClick={() => submit()}>
+          SAVE
+        </button>
+      </div>
+    )
   }
 
   return (
@@ -267,17 +339,8 @@ function NewPatientForm4({
               </div>
             </div>
 
-            <div className="row">
-              <div className="col d-flex justify-content-end">
-                <button
-                  className="form-button-previous"
-                  onClick={() => navigation.previous()}
-                >
-                  BACK
-                </button>
-                {proceed()}
-              </div>
-            </div>
+            {renderBody()}
+            {renderButtons()}
           </div>
         </div>
       </div>
