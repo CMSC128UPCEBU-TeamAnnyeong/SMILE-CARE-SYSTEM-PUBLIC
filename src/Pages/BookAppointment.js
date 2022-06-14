@@ -3,6 +3,7 @@ import "./BookAppointment.css"
 import book from "../Assets/book.png"
 import rightArrow from "../Assets/right-arrow.png"
 import { Navigate } from "react-router-dom"
+import logoSmileCareSystem from "../../src/Assets/logo.png"
 
 function BookAppointment() {
   const [toBookAppointmentForm, setBookAppointmentForm] = useState(false)
@@ -14,6 +15,15 @@ function BookAppointment() {
 
   if(toNewPatient === true) {
     return <Navigate to={"/new-patient-appointment"}/>
+  }
+
+  function PoweredBy() {
+    return (
+      <div className="footer">
+        <div className="poweredby-text-appointment">POWERED BY</div>
+        <img src={logoSmileCareSystem} className="poweredby-logo" />
+      </div>
+    )
   }
 
   return (
@@ -56,6 +66,7 @@ function BookAppointment() {
           <img src={book} className="book-appointment-pic" />
         </div>
       </div>
+      <PoweredBy/>
     </div>
   )
 }

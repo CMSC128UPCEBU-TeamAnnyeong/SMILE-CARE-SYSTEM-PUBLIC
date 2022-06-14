@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import "./App.css"
 // import "./components/FontAwesomeIcons"
 import Navbar from "./components/Navbar/Navbar"
-import PoweredBy from "./components/PoweredBy/PoweredBy"
 import {
   BrowserRouter as Router,
   Routes,
@@ -55,7 +54,6 @@ function App() {
           />
         </Routes>
       </Router>
-      <PoweredBy />
     </div>
   )
 }

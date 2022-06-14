@@ -79,6 +79,9 @@
     padding: 2%;
 }
 
+.input-cont input[type="text"] {
+    background-color: #e8f9fc;
+  }
 
 
 /* @media (max-width: 1000px){

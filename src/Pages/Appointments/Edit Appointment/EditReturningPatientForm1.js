@@ -241,20 +241,20 @@ function EditReturningPatientForm1({
               </div>
             </div>
             <div className="row mt-2">
-            <div className="col-sm-4">
+              <div className="col-sm-4">
                 <span className="form-label">Street Address</span>
-                  <br />
-                  <div className="input-cont">
-                    <input
-                      type="text"
-                      className="form-input streetaddress-input"
-                      name="streetAddress"
-                      value={patient.street_address}
-                      onChange={setPatient}
-                      readOnly
-                      disabled
-                    />
-                  </div>
+                <br />
+                <div className="input-cont">
+                  <input
+                    type="text"
+                    className="form-input streetaddress-input"
+                    name="streetAddress"
+                    value={patient.street_address}
+                    onChange={setPatient}
+                    readOnly
+                    disabled
+                  />
+                </div>
               </div>
               <div className="col-sm-4">
                 <span className="form-label">Appointment Date Time</span>
@@ -276,7 +276,10 @@ function EditReturningPatientForm1({
                   value={editAppointment.services}
                   onChange={(e) => handleChange(e)}
                 >
-                  <option value="" disabled> Select </option>
+                  <option value="" disabled>
+                    {" "}
+                    Select{" "}
+                  </option>
                   <option value="check-up">Check-up</option>
                   <option value="follow-up">Follow-up</option>
                   <option value="others">Others</option>

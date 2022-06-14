@@ -16,6 +16,16 @@ import tmj from './../Assets/tmj.png'
 import cosmetic from './../Assets/cosmetic.png'  
 import surgery from './../Assets/surgery.png'  
 import clock from './../Assets/clock.png'
+import logoSmileCareSystem from "../../src/Assets/logo.png"
+
+function PoweredBy() {
+    return (
+      <div className="footer">
+        <div className="poweredby-text-about">POWERED BY</div>
+        <img src={logoSmileCareSystem} className="poweredby-logo" />
+      </div>
+    )
+  }
 
 function About() {
   return (  
@@ -77,32 +87,32 @@ function About() {
             <div className='service-header'>Dental Services</div>
                 <div className='row'>
                     <div className='col-3'>
-                        <img src={gen_den} className='service-icon' />
-                        <div className='service-title'>General Dentistry</div>
-                        <div className='service-body-gen-den'>☑ Oral Prophylaxis</div>
-                        <div className='service-body-gen-den'>☑ Tooth Filling</div>
-                        <div className='service-body-gen-den'>☑ Tooth Extractions</div>
+                        <img src={gen_den} className='service-icon-general' />
+                        <div className='service-title-general'>General Dentistry</div>
+                        <div className='service-body-gen-den-1'>☑ Oral Prophylaxis</div>
+                        <div className='service-body-gen-den-2'>☑ Tooth Filling</div>
+                        <div className='service-body-gen-den-3'>☑ Tooth Extractions</div>
                     </div>
                     <div className='col-3'>
-                        <img src={prostho} className='service-icon' />
-                        <div className='service-title'>Prosthodontics</div>
-                        <div className='service-body-prostho'>☑ Removable Dentures</div>
-                        <div className='service-body-prostho'>☑ Fixed Partial Dentures</div>
+                        <img src={prostho} className='service-icon-prosth' />
+                        <div className='service-title-prosth'>Prosthodontics</div>
+                        <div className='service-body-prostho-1'>☑ Removable Dentures</div>
+                        <div className='service-body-prostho-2'>☑ Fixed Partial Dentures</div>
                     </div>
                     <div className='col-3'>
-                        <img src={endo} className='service-icon' />
-                        <div className='service-title'>Endodontics</div>
-                        <div className='service-body-endo'>☑ Post and Core</div>
-                        <div className='service-body-endo'>☑ Root Canal Treatment</div>
+                        <img src={endo} className='service-icon-endo' />
+                        <div className='service-title-endo'>Endodontics</div>
+                        <div className='service-body-endo-1'>☑ Post and Core</div>
+                        <div className='service-body-endo-2'>☑ Root Canal Treatment</div>
                     </div>
                     <div className='col-3'>
-                        <img src={ortho} className='service-icon' />
-                        <div className='service-title'>Orthodontics</div>
-                        <div className='service-body-ortho'>☑ Braces</div>
-                        <div className='service-body-ortho'>☑ Retainers Space Maintainers</div>
-                        <div className='service-body-ortho'>☑ Other Orthodontic Appliance</div>
-                        <div className='service-body-ortho'>☑ Kline Aligners</div>
-                        <div className='service-body-ortho'>☑ Mouthguard</div>
+                        <img src={ortho} className='service-icon-ortho' />
+                        <div className='service-title-ortho'>Orthodontics</div>
+                        <div className='service-body-ortho-1'>☑ Braces</div>
+                        <div className='service-body-ortho-2'>☑ Retainers Space Maintainers</div>
+                        <div className='service-body-ortho-3'>☑ Other Orthodontic Appliance</div>
+                        <div className='service-body-ortho-4'>☑ Kline Aligners</div>
+                        <div className='service-body-ortho-5'>☑ Mouthguard</div>
                     </div>
                 </div>
 
@@ -110,21 +120,21 @@ function About() {
                     <div className='row'>
                         <div className='col-4'>
                             <img src={tmj} className='service-icon-tmj' />
-                            <div className='service-title'>TMJ Treatment</div>
+                            <div className='service-title-tmj'>TMJ Treatment</div>
                             <div className='service-body-tmj'>☑ Splint</div>
                         </div>
                         <div className='col-2'>
                             <img src={cosmetic} className='service-icon-cosmetic' />
-                            <div className='service-title'>Cosmetic Dentistry</div>
-                            <div className='service-body-cosmetic'>☑ Teeth Whitening</div>
-                            <div className='service-body-cosmetic'>☑ Veneers</div>
+                            <div className='service-title-cosmetic'>Cosmetic Dentistry</div>
+                            <div className='service-body-cosmetic-1'>☑ Teeth Whitening</div>
+                            <div className='service-body-cosmetic-2'>☑ Veneers</div>
                         </div>
                         <div className='col-3'>
                             <img src={surgery} className='service-icon-surgery' />
-                            <div className='service-title'>Dental Surgery</div>
-                            <div className='service-body-surgery'>☑ Gum Contouring</div>
-                            <div className='service-body-surgery'>☑ Removal of Impacted Tooth</div>
-                            <div className='service-body-surgery'>☑ Frenectomy</div>
+                            <div className='service-title-dental'>Dental Surgery</div>
+                            <div className='service-body-surgery-1'>☑ Gum Contouring</div>
+                            <div className='service-body-surgery-2'>☑ Removal of Impacted Tooth</div>
+                            <div className='service-body-surgery-3'>☑ Frenectomy</div>
                         </div>
                     </div>
                 </div>
@@ -145,6 +155,7 @@ function About() {
                         </div>
                     </div>
             </div>
+            <PoweredBy/>
     </div>
   )
 }

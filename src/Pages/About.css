@@ -44,47 +44,164 @@
     padding-bottom: 2%;
 }
 
-.service-cont {
-    margin-left: 2%;
-    padding-right: 10% !important;
-}
-
-.service-title {
+.service-title-general {
     font-family: 'Montserrat-Bold';
     color: #3469E7;
     font-size: 20px;
     text-align: center;
 }
 
-.service-body-gen-den {
+.service-title-prosth {
+    font-family: 'Montserrat-Bold';
+    color: #3469E7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-title-endo {
+    font-family: 'Montserrat-Bold';
+    color: #3469E7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-title-ortho {
+    font-family: 'Montserrat-Bold';
+    color: #3469E7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-title-tmj {
+    font-family: 'Montserrat-Bold';
+    color: #3469E7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-title-cosmetic {
+    font-family: 'Montserrat-Bold';
+    color: #3469E7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-title-dental {
+    font-family: 'Montserrat-Bold';
+    color: #3469E7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-body-gen-den-1 {
     font-family: 'Montserrat-Regular';
     color: #45517d;
     font-size: 15px;
     padding-left: 23%;
 }
 
-.service-body-prostho {
+.service-body-gen-den-2 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 23%;
+}
+
+.service-body-gen-den-3 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 23%;
+}
+
+.service-body-prostho-1 {
     font-family: 'Montserrat-Regular';
     color: #45517d;
     font-size: 15px;
     padding-left: 27%;
 }
 
-.service-body-endo {
+.service-body-prostho-2 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 27%;
+}
+
+.service-body-endo-1 {
     font-family: 'Montserrat-Regular';
     color: #45517d;
     font-size: 15px;
     padding-left: 31%;
 }
 
-.service-body-ortho {
+.service-body-endo-2 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 31%;
+}
+
+.service-body-ortho-1 {
     font-family: 'Montserrat-Regular';
     color: #45517d;
     font-size: 15px;
     padding-left: 30%;
 }
 
-.service-icon {
+.service-body-ortho-2 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 30%;
+}
+
+.service-body-ortho-3 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 30%;
+}
+
+.service-body-ortho-4 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 30%;
+}
+
+.service-body-ortho-5 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 30%;
+}
+
+.service-icon-general {
+    width: 20%;
+    padding-bottom: 1%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.service-icon-prosth {
+    width: 20%;
+    padding-bottom: 1%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.service-icon-endo {
+    width: 20%;
+    padding-bottom: 1%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.service-icon-ortho {
     width: 20%;
     padding-bottom: 1%;
     display: block;
@@ -127,14 +244,35 @@
     padding-left: 31%;
 }
 
-.service-body-cosmetic {
+.service-body-cosmetic-1 {
     font-family: 'Montserrat-Regular';
     color: #45517d;
     font-size: 15px;
     padding-left: 17%;
 }
 
-.service-body-surgery {
+.service-body-cosmetic-2 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 17%;
+}
+
+.service-body-surgery-1 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 25%;
+}
+
+.service-body-surgery-2 {
+    font-family: 'Montserrat-Regular';
+    color: #45517d;
+    font-size: 15px;
+    padding-left: 25%;
+}
+
+.service-body-surgery-3 {
     font-family: 'Montserrat-Regular';
     color: #45517d;
     font-size: 15px;
@@ -177,4 +315,357 @@ html,body {
     margin:0;
     padding:0;
     overflow-x:hidden;
+}
+
+.poweredby-text-about {
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+}
+
+.poweredby-logo {
+    width: 12rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 400px){
+    .about-cont {
+        max-height: 572.5px;
+       
+    }
+    .about-header {
+        font-size: 43px;
+        text-align: justify;
+    }
+    
+    .about-body {
+        font-size: 10px;
+    }
+
+    .about-low {
+        padding-top: 1% !important;
+
+    }
+    
+    .slide {
+        max-height: 572.5px;
+    }
+
+    .service-header {
+        font-size: 40px;
+        padding-top: 3%;
+        padding-left: 10%;
+    }
+    
+    .service-icon-general {
+        position: absolute;
+        top: 700px;
+        left: 80px;
+        width: 25px;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+
+    .service-icon-prosth {
+        position: absolute;
+        top: 800px;
+        left: 80px;
+        width: 25px;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+    
+    .service-icon-endo {
+        position: absolute;
+        top: 885px;
+        left: 80px;
+        width: 25px;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+    
+    .service-icon-ortho {
+        position: absolute;
+        top: 970px;
+        left: 80px;
+        width: 25px;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+
+    .service-icon-tmj {
+        position: absolute;
+        top: 1160px;
+        left: 80px;
+        width: 25px;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+    
+    .service-icon-cosmetic {
+        position: absolute;
+        top: 1225px;
+        left: 80px;
+        width: 25px;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+    
+    .service-icon-surgery {
+        position: absolute;
+        top: 1315px;
+        left: 80px;
+        width: 25px;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+
+    .service-title-general {
+        position: absolute;
+        top: 700px;
+        left: 120px;
+        margin-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+
+    .service-title-prosth {
+        position: absolute;
+        top: 800px;
+        left: 120px;
+        margin-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+
+    .service-title-endo {
+        position: absolute;
+        top: 885px;
+        left: 120px;
+        margin-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+
+    .service-title-ortho {
+        position: absolute;
+        top: 970px;
+        left: 120px;
+        margin-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+
+    .service-title-tmj {
+        position: absolute;
+        top: 1160px;
+        left: 120px;
+        margin-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+    
+    .service-title-cosmetic {
+        position: absolute;
+        top: 1225px;
+        left: 120px;
+        margin-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+    
+    .service-title-dental {
+        position: absolute;
+        top: 1315px;
+        left: 120px;
+        margin-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 80%;
+    }
+
+    .service-body-gen-den-1 {
+        position: absolute;
+        top: 770px;
+        left: 37px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-gen-den-2 {
+        position: absolute;
+        top: 790px;
+        left: 37px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-gen-den-3 {
+        position: absolute;
+        top: 810px;
+        left: 37px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-prostho-1 {
+        position: absolute;
+        top: 870px;
+        left: 17px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-prostho-2 {
+        position: absolute;
+        top: 890px;
+        left: 17px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-endo-1 {
+        position: absolute;
+        top: 955px;
+        left: 0px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-endo-2 {
+        position: absolute;
+        top: 975px;
+        left: 0px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-ortho-1 {
+        position: absolute;
+        top: 1040px;
+        left: 5px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-ortho-2 {
+        position: absolute;
+        top: 1060px;
+        left: 5px;
+        right: 20px;
+        margin-right: 15%;
+        text-align: left;
+    }
+
+    .service-body-ortho-3 {
+        position: absolute;
+        top: 1103px;
+        left: 5px;
+        right: 40px;
+        margin-right: 15%;
+        text-align: left;
+    }
+
+    .service-body-ortho-4 {
+        position: absolute;
+        top: 1145px;
+        left: 5px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-ortho-5 {
+        position: absolute;
+        top: 1165px;
+        left: 5px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-tmj {
+        position: absolute;
+        top: 1230px;
+        left: 3px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+    
+    .service-body-cosmetic-1 {
+        position: absolute;
+        top: 1297px;
+        left: 60px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-cosmetic-2 {
+        position: absolute;
+        top: 1317px;
+        left: 60px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+    
+    .service-body-surgery-1 {
+        position: absolute;
+        top: 1390px;
+        left: 26px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .service-body-surgery-2 {
+        position: absolute;
+        top: 1410px;
+        left: 26px;
+        margin-right: 15%;
+        text-align: left;
+    }
+
+    .service-body-surgery-3 {
+        position: absolute;
+        top: 1450px;
+        left: 26px;
+        margin-right: 15%;
+        text-align: justify;
+    }
+
+    .store-cont {
+        position: absolute;
+        top: 1480px;
+        height: 14%;
+    }
+
+    .clock {
+        position: absolute;
+        right: 65%;
+        bottom: 4%;
+        width: 30%;
+    }
+
+    .clinic-hour-header {
+        font-size: 35px;
+        position: absolute;
+        bottom: 56%;
+        right: 12%;
+    }
+    
+    .clinic-hour-subheader {
+        font-size: 20px;
+        position: absolute;
+        top: 42%;
+        right: 13.5%;
+    }
+
+    .clinic-hour-subsubheader {
+        font-size: 20px;
+        position: absolute;
+        bottom: 6%;
+        right: 18%;
+    }
+
+    .poweredby-text-about {
+        padding-top: 227%;
+    }
 }

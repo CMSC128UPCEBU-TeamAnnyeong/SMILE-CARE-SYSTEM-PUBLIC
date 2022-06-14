@@ -41,3 +41,30 @@
     margin-top: 5% !important;
     border-radius: 16px;
 }
+
+.poweredby-text-home {
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+}
+
+.poweredby-logo {
+    width: 12rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 400px){
+    .home.submit-btn {
+        width: 40%;
+    }
+
+    .home-header {
+        margin-top: 10% !important;
+    }
+
+    .poweredby-text-home {
+        padding-top: 7%;
+    }
+}

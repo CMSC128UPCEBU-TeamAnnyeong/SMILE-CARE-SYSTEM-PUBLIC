@@ -18,9 +18,6 @@ import { useParams } from "react-router-dom"
 //css
 import "./returningPatient.css"
 
-//components
-import Navbar from "../../../components/Navbar/Navbar"
-
 function ReturningPatientForm1({
   appointment,
   setAppointment,
@@ -70,9 +67,9 @@ function ReturningPatientForm1({
     console.log(response)
     if (response) {
       toast.success("Successfully Added Appointment!")
-      // setTimeout(function () {
-      //   setRedirect(true)
-      // }, 2000)
+      setTimeout(function () {
+        setRedirect(true)
+      }, 2000)
     }
   }
 

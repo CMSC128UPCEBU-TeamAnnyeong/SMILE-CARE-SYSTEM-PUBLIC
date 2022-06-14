@@ -82,9 +82,6 @@ function NewPatientForm3({
 
   function proceed() {
     if (
-      bleedingTime != "" &&
-      bloodType != "" &&
-      bloodPressure != "" &&
       agreement != ""
     ) {
       return (

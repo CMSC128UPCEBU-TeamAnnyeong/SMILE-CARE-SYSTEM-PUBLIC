@@ -40,7 +40,7 @@ function Navbar() {
         className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
         <ul className='list-items'>
           <li><a href="/" className={active == 0 ? "active" : ""} onClick={() => handleActive(0)}>Home</a></li>
-          <li><a href="/about" className={active === 1 ? "active" : ""} onClick={() => handleActive(1)}>About</a></li>
+          <li><a href="/about" className={active == 1 ? "active" : ""} onClick={() => handleActive(1)}>About</a></li>
           <li><a href="/appointment" className={active == 2 ? "active" : ""} onClick={() => handleActive(2)}>Book Appointment</a></li>
           <li><a href="/view" className={active == 3 ? "active" : ""} onClick={() => handleActive(3)}>View Queue</a></li>
           <li><a href="/contact" className={active == 4 ? "active" : ""} onClick={() => handleActive(4)}>Contact</a></li>

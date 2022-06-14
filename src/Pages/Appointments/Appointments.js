@@ -1,6 +1,10 @@
 import React, { useState } from "react"
 import { Navigate } from "react-router-dom"
-import { getTime, getTodayDateISO, refreshPage } from "../../Helpers/Utils/Common"
+import {
+  getTime,
+  getTodayDateISO,
+  refreshPage
+} from "../../Helpers/Utils/Common"
 import {
   approveAppointment,
   disapproveAppointment,
@@ -57,7 +61,7 @@ const pendingActionOptions = [
   {
     label: "Disapprove",
     value: "disapprove"
-  },
+  }
 ]
 
 const statusOptions = [
@@ -92,25 +96,27 @@ function Appointments() {
   const [status, setStatus] = useState("")
 
   //Select Width Customization
-  const [approvedDate, setApprovedDate] = useState({from: getTodayDateISO(), to: getTodayDateISO()})
+  const [approvedDate, setApprovedDate] = useState({
+    from: getTodayDateISO(),
+    to: getTodayDateISO()
+  })
   const [pendingDate, setPendingDate] = useState("today")
-
 
   //Redirection
   const [toNewPatientForm, setToNewPatientForm] = useState(false)
   const [toReturningPatientForm, setToReturningPatientForm] = useState(false)
 
   async function approve(id) {
-    const response = await approveAppointment(id);
-    console.log(response);
-    if(response) {
+    const response = await approveAppointment(id)
+    console.log(response)
+    if (response) {
       toast.success("Successfully approved appointment.")
     }
   }
   async function disapprove(id) {
-    const response = await disapproveAppointment(id);
-    console.log(response);
-    if(response) {
+    const response = await disapproveAppointment(id)
+    console.log(response)
+    if (response) {
       toast.success("Successfully disapproved appointment.")
     }
   }
@@ -118,7 +124,11 @@ function Appointments() {
   async function fetchAppointments() {
     var color = ""
     console.log(approvedDate)
-    const response = await getAppointments("", approvedDate, "APPROVED, ONGOING, CANCELED, COMPLETED, UPCOMING")
+    const response = await getAppointments(
+      "",
+      approvedDate,
+      "APPROVED, ONGOING, CANCELED, COMPLETED, UPCOMING"
+    )
     console.log(response)
     response.data.data.data.map((data, index) => {
       var info = {}
@@ -184,7 +194,7 @@ function Appointments() {
 
       if (data.status === "PENDING") {
         color = "grey"
-      } 
+      }
       info.action = pendingBtn(data.id, data.patient.id)
       setPendingAppointments((oldArray) => [...oldArray, info])
     })
@@ -249,20 +259,20 @@ function Appointments() {
       name: "Emil Lio",
       time: "09:05 AM",
       purpose: "Root Canal",
-      action: pendingBtn(),
+      action: pendingBtn()
     },
     {
       id: "",
       name: "Juan Lio",
       time: "09:05 AM",
       purpose: "Cleaning",
-      action: pendingBtn(),
+      action: pendingBtn()
     }
   ])
 
   React.useEffect(() => {
-      fetchAppointments();
-      fetchPendingAppointments();
+    fetchAppointments()
+    fetchPendingAppointments()
   }, [approvedDate, statusSelected])
 
   React.useEffect(() => {
@@ -275,24 +285,23 @@ function Appointments() {
       setActionSelected("")
     }
 
-    if(actionSelected.value === "approve") {
-      approve(actionSelected.appointment);
+    if (actionSelected.value === "approve") {
+      approve(actionSelected.appointment)
       setTimeout(function () {
-        refreshPage();
-      }, 2000)
-    }
-  
-    if(actionSelected.value === "disapprove") {
-      disapprove(actionSelected.appointment);
-      setTimeout(function () {
-        refreshPage();
+        refreshPage()
       }, 2000)
     }
 
+    if (actionSelected.value === "disapprove") {
+      disapprove(actionSelected.appointment)
+      setTimeout(function () {
+        refreshPage()
+      }, 2000)
+    }
   }, [actionSelected.value])
 
-  if(approvedDate == "other date") {
-    return <Navigate to={"/appointments/search"}/>
+  if (approvedDate == "other date") {
+    return <Navigate to={"/appointments/search"} />
   }
 
   if (toNewPatientForm == true) {
@@ -401,7 +410,7 @@ function Appointments() {
               <Table
                 type={"pending-appointments"}
                 tableData={pendingAppointments}
-                headingColumns={["ID","Name", "Time", "Purpose", "Action"]}
+                headingColumns={["ID", "Name", "Time", "Purpose", "Action"]}
                 rowsPerPage={15}
                 date={pendingDate}
                 setDate={setPendingDate}
