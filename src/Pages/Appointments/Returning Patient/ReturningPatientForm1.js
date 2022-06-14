@@ -91,7 +91,7 @@ function ReturningPatientForm1({
   }
 
   function proceed() {
-    if (appointmentDateTime != "" /*&& services.length != 0*/) {
+    if (appointmentDateTime != "" && purpose != "") {
       return (
         <button
           className="form-button-next"
@@ -280,6 +280,9 @@ function ReturningPatientForm1({
                         return <option value={data.label}>{data.label}</option>
                       })}
                     </select>
+                    {purpose == "" && (
+                        <span className="error-msg">Purpose is required*</span>
+                      )}
                   </div>
                 </div>
                 <div className="row mt-2 personal-input-cont">

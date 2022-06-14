@@ -78,6 +78,7 @@ function NewPatientForm4({
     console.log(appointment)
     console.log(category)
     console.log(services)
+    
     const response = await createAppointment(
       id,
       category,
@@ -98,13 +99,13 @@ function NewPatientForm4({
 
 
   function proceed() {
-    if (appointmentDateTime != "" /*&& services.length != 0*/) {
+    if (appointmentDateTime != "" && purpose != "") {
       return (
         <button className="form-button-next" onClick={() => submit()}>
           SAVE
         </button>
       )
-    }
+    } 
   }
 
   const handleShowToken = () => {
@@ -234,7 +235,7 @@ function NewPatientForm4({
                       name="purpose"
                       onChange={(e) => setPurpose(e.target.value)}
                     >
-                      <option value="" disabled>
+                      <option value="" selected>
                         {" "}
                         Select{" "}
                       </option>
@@ -245,6 +246,9 @@ function NewPatientForm4({
                         return <option value={data.label}>{data.label}</option>
                       })}
                     </select>
+                    {purpose == "" && (
+                        <span className="error-msg">Purpose is required*</span>
+                      )}
                   </div>
                 </div>
                 <div className="row">
