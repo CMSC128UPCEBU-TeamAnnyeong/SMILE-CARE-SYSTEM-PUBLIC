@@ -44,17 +44,13 @@ function App() {
           <Route
             path="/new-patient-appointment"
             element={
-              isAuthenticated ? <NewPatientSwitchForm /> : <Navigate to="/" />
+             <NewPatientSwitchForm /> 
             }
           />
           <Route
             path="/returning-patient-appointment"
             element={
-              isAuthenticated ? (
                 <ReturningPatientSwitchForm />
-              ) : (
-                <Navigate to="/" />
-              )
             }
           />
         </Routes>
