@@ -56,7 +56,8 @@ function NewPatientForm4({
       patient,
       medicalHistory,
       sickness,
-      agreement
+      agreement,
+      profilePicture
     )
     console.log(response)
     if (response) {

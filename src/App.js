@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import "./App.css"
 // import "./components/FontAwesomeIcons"
-import Navbar from "./components/Navbar/Navbar"
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,6 +8,7 @@ import {
   Navigate
 } from "react-router-dom"
 import { getUser } from "./Helpers/Utils/Common"
+import Navbar from "./components/Navbar/Navbar"
 
 /** PAGES **/
 import Home from "./Pages/Home"
