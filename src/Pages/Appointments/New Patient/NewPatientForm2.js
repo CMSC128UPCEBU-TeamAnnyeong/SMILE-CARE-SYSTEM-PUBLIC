@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 //css
 import "./newPatient.css"
@@ -10,7 +10,7 @@ function NewPatientForm2({
   setMedicalHistory,
   navigation
 }) {
-  const [inactive, setInactive] = useState(false)
+  const inactive = false
 
   const {
     physician,
@@ -195,13 +195,13 @@ function NewPatientForm2({
 
   const renderButtons = () => {
     if (
-      !inGoodHealth &&
-      !isUnderTreatment &&
-      !hasIllnessOrSurgery &&
-      !isHospitalized &&
-      !isTakingPrescription &&
-      !isUsingTabacco &&
-      !isUsingDangerousDrugs &&
+      !inGoodHealth ||
+      !isUnderTreatment ||
+      !hasIllnessOrSurgery ||
+      !isHospitalized ||
+      !isTakingPrescription ||
+      !isUsingTabacco ||
+      !isUsingDangerousDrugs ||
       !isAllergictoMentionedDrugs
     ) {
       return
