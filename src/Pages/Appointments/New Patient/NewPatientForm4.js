@@ -197,9 +197,9 @@ function NewPatientForm4({
       <ToastContainer />
       <div className={`container ${inactive ? "inactive" : "active"}`}>
         <div className="row page-content">
-          <div className="form-card-cont">
+          <div className="form-card-cont-form4">
           <div className="row">
-              <h1 className="peronal-info-header">
+              <h1 className="personal-info-header-appointment">
                 Add Appointment
               </h1>
             </div>
@@ -218,19 +218,19 @@ function NewPatientForm4({
               <div className="col-sm-8">
                 <div className="row mb-4">
                   <div className="col">
-                    <span className="form-label">Appointment Date Time</span>
+                    <span className="form-label-date-time">Appointment Date Time</span>
                     <br />
                     <DateTimePicker
-                      className="form-input"
+                      className="form-input-date-time"
                       onChange={onChange}
                       value={value}
                     />
                   </div>
                   <div className="col">
-                    <span className="form-label">Purpose</span>
+                    <span className="form-label-purpose">Purpose</span>
                     <br />
                     <select
-                      className="form-input category-input"
+                      className="form-input-category category-input"
                       name="services"
                     >
                       <option value="" disabled>
@@ -247,7 +247,7 @@ function NewPatientForm4({
                   </div>
                 </div>
                 <div className="row">
-                  <span className="form-label">Remarks / Notes</span>
+                  <span className="form-label-remarks-notes">Remarks / Notes</span>
                   <br />
                   <textarea
                     id="notes"
