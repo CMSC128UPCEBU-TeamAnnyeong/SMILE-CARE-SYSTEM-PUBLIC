@@ -81,7 +81,7 @@ function Table({
         <tr key={row.id} className={highlightRow === row.token ? "highlight-row" : ""}>
             <td
               key={index}
-              data-heading={row.id}
+              data-heading={"Priority"}
               className={
               " queue-cell grey-text"
               }
@@ -90,7 +90,7 @@ function Table({
             </td>
             <td
               key={index}
-              data-heading={row.id}
+              data-heading={"Username"}
               className={
               " queue-cell blue-text"
               }
@@ -99,7 +99,7 @@ function Table({
             </td>
             <td
               key={index}
-              data-heading={row.id}
+              data-heading={"Appointment Date"}
               className={
               " queue-cell grey-text"
               }
@@ -108,7 +108,7 @@ function Table({
             </td>
             <td
               key={index}
-              data-heading={row.id}
+              data-heading={"Status"}
               className={
               row.status + 
               " queue-cell grey-text"
