@@ -327,7 +327,6 @@ input[type="radio"]:checked {
   color: #45517d;
 }
 
-
 .agreement-content {
   display: inline-block;
 }
@@ -389,12 +388,15 @@ input[type="radio"]:checked {
   background: #ffffff;
   box-shadow: 0px 4px 10px -5px rgb(0 0 0 / 25%);
   border-radius: 10px;
-  padding: 3%;
-  padding-left: 50px !important;
-  padding-right: 50px !important;
-  width: 98% !important;
-  margin-top: 2% !important;
-  margin: 1%;
+  padding: 5% !important;
+  display: flex;
+  flex-direction: column;
+  /* padding: 3%; */
+  /* padding-left: 50px !important; */
+  /* padding-right: 50px !important; */
+  /* width: 98% !important; */
+  /* margin-top: 2% !important; */
+  /* margin: 1%; */
 }
 
 .personal-info-header-appointment {
@@ -426,7 +428,7 @@ input[type="radio"]:checked {
 
 .poweredby-logo {
   width: 12rem;
-  display:block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -612,7 +614,6 @@ input[type="radio"]:checked {
     padding-bottom: 100%;
   }
 
-  
   .form-input-date-time {
     width: 167%;
   }
@@ -625,7 +626,7 @@ input[type="radio"]:checked {
     text-align: center;
   }
 
-  .personal-info-header-medical-history{
+  .personal-info-header-medical-history {
     text-align: center;
   }
 
@@ -633,13 +634,76 @@ input[type="radio"]:checked {
     padding-top: 20%;
     width: 120% !important;
   }
-  
+
   .signature-img {
     width: 90% !important;
     margin-left: 5%;
   }
-
-
 }
 
+.add-appointment-section-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: #45517d;
+}
+
+.top-section-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.datetime-picker {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 5px;
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.purposes {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.bottom-section-inputs {
+  display: flex;
+}
+
+textarea {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  resize: none !important;
+  border-radius: 8px;
+  color: black;
+  height: 100% !important;
+}
+
+.add-appointment-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}

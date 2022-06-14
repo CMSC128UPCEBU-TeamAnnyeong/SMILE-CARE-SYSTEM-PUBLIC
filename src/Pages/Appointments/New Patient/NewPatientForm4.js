@@ -42,10 +42,9 @@ function NewPatientForm4({
   const [purpose, setPurpose] = useState("")
   const [profilePicture, setProfilePicture] = useState("")
   const [token, setToken] = useState({
-    appointment_token:"",
-    patient_short_id:""
+    appointment_token: "",
+    patient_short_id: ""
   })
-
 
   const options = [{ label: "Root Canal", value: "" }]
 
@@ -89,21 +88,10 @@ function NewPatientForm4({
     )
     console.log(response)
     if (response) {
-      toast.success("Successfully Added Appointment!")    // This never shows up idk why
+      toast.success("Successfully Added Appointment!") // This never shows up idk why
       // setTimeout(function () {
       //   setRedirect(true)
       // }, 2000)
-    }
-  }
-
-
-  function proceed() {
-    if (appointmentDateTime != "" /*&& services.length != 0*/) {
-      return (
-        <button className="form-button-next" onClick={() => submit()}>
-          SAVE
-        </button>
-      )
     }
   }
 
@@ -191,6 +179,76 @@ function NewPatientForm4({
     return <Navigate to={"/appointment"} />
   }
 
+  const renderBody = () => {
+    return (
+      <div className="add-appointment-section-body">
+        <div className="profile-picture">
+          <div className="form-label">Profile Picture</div>
+          <ProfileUpload
+            setProfilePicture={setProfilePicture}
+            profilePicture={profilePicture}
+          />
+        </div>
+        <div className="inputs">
+          <div className="top-section-inputs">
+            <div className="input">
+              <div className="title">Appointment Date Time</div>
+              <DateTimePicker
+                className="datetime-picker"
+                onChange={onChange}
+                value={value}
+              />
+            </div>
+            <div className="input">
+              <div className="title">Purpose</div>
+              <select name="services" className="purposes">
+                <option value="" disabled>
+                  Select{" "}
+                </option>
+                <option value="check-up">Check-up</option>
+                <option value="follow-up">Follow-up</option>
+                <option value="others">Others</option>
+                {serviceOptions.map((data, index) => {
+                  return <option value={data.label}>{data.label}</option>
+                })}
+              </select>
+            </div>
+          </div>
+          <div className="bottom-section-inputs">
+            <div className="input">
+              <div className="title">Remarks / Notes</div>
+              <textarea
+                id="notes"
+                name="notes"
+                rows="9"
+                cols="50"
+                value={notes}
+                onChange={(e) => setNotes(e.target.value)}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  const renderButtons = () => {
+    if (!appointmentDateTime) {
+      return
+    }
+
+    return (
+      <div className="add-appointment-buttons">
+        <button className="button back" onClick={() => navigation.previous()}>
+          BACK
+        </button>
+        <button className="button next" onClick={() => submit()}>
+          SAVE
+        </button>
+      </div>
+    )
+  }
+
   return (
     <div className="page">
       {renderToken()}
@@ -198,81 +256,11 @@ function NewPatientForm4({
       <div className={`container ${inactive ? "inactive" : "active"}`}>
         <div className="row page-content">
           <div className="form-card-cont-form4">
-          <div className="row">
-              <h1 className="personal-info-header-appointment">
-                Add Appointment
-              </h1>
+            <div className="personal-info-header-appointment">
+              Add Appointment
             </div>
-            <div className="row">
-              <div className="col-sm-4">
-                <div>
-                  <h1 className="form-label" style={{ paddingTop: "1%" }}>
-                    Profile Picture
-                  </h1>
-                </div>
-                <ProfileUpload
-                  setProfilePicture={setProfilePicture}
-                  profilePicture={profilePicture}
-                />
-              </div>
-              <div className="col-sm-8">
-                <div className="row mb-4">
-                  <div className="col">
-                    <span className="form-label-date-time">Appointment Date Time</span>
-                    <br />
-                    <DateTimePicker
-                      className="form-input-date-time"
-                      onChange={onChange}
-                      value={value}
-                    />
-                  </div>
-                  <div className="col">
-                    <span className="form-label-purpose">Purpose</span>
-                    <br />
-                    <select
-                      className="form-input-category category-input"
-                      name="services"
-                    >
-                      <option value="" disabled>
-                        {" "}
-                        Select{" "}
-                      </option>
-                      <option value="check-up">Check-up</option>
-                      <option value="follow-up">Follow-up</option>
-                      <option value="others">Others</option>
-                      {serviceOptions.map((data, index) => {
-                        return <option value={data.label}>{data.label}</option>
-                      })}
-                    </select>
-                  </div>
-                </div>
-                <div className="row">
-                  <span className="form-label-remarks-notes">Remarks / Notes</span>
-                  <br />
-                  <textarea
-                    id="notes"
-                    name="notes"
-                    className="notesNewPatient"
-                    rows="10"
-                    cols="115"
-                    value={notes}
-                    onChange={(e) => setNotes(e.target.value)}
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col d-flex justify-content-end">
-                <button
-                  className="form-button-previous"
-                  onClick={() => navigation.previous()}
-                >
-                  BACK
-                </button>
-                {proceed()}
-              </div>
-            </div>
+            {renderBody()}
+            {renderButtons()}
           </div>
         </div>
       </div>
