@@ -55,6 +55,10 @@
     margin-right: auto;
 }
 
+.submit-btn a {
+    color: white !important;
+}
+
 @media (max-width: 400px){
     .home.submit-btn {
         width: 40%;
