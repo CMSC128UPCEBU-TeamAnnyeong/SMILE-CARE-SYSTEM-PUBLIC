@@ -3,9 +3,6 @@ import React, { useState } from "react"
 //css
 import "./newPatient.css"
 
-//components
-import Navbar from "../../../components/Navbar/Navbar"
-
 function NewPatientForm1({
   patient,
   setPatient,

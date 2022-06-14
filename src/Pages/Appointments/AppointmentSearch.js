@@ -1,8 +1,12 @@
 import React, { useState } from "react"
-import { getTime, getTodayDateISO, refreshPage, subtractDays } from "../../Helpers/Utils/Common"
+import {
+  getTime,
+  getTodayDateISO,
+  refreshPage,
+  subtractDays
+} from "../../Helpers/Utils/Common"
 import { getPatients, searchPatient } from "../../Helpers/apiCalls/patientApi"
 import { Navigate } from "react-router-dom"
-
 
 //css
 import "./Appointments.css"
@@ -16,12 +20,12 @@ import Dropdown from "../../components/Dropdown/Dropdown"
 import { getAppointments } from "../../Helpers/apiCalls/appointmentApi"
 
 const headers = [
-    {label: 'ID', key: 'id'},
-    {label: 'NAME', key: 'name'},
-    {label: 'TIME', key: 'time'},
-    {label: 'PURPOSE', key: 'purpose'},
-    {label: 'PAYMENT', key: 'payment'},
-];
+  { label: "ID", key: "id" },
+  { label: "NAME", key: "name" },
+  { label: "TIME", key: "time" },
+  { label: "PURPOSE", key: "purpose" },
+  { label: "PAYMENT", key: "payment" }
+]
 
 function AppointmentSearch() {
   const [inactive, setInactive] = useState(false)
@@ -31,19 +35,19 @@ function AppointmentSearch() {
   //Select Width Customization
   const [date, setDate] = useState({
     from: "",
-    to: "",
-})
+    to: ""
+  })
 
-const handleChange = e => {
-  const { name, value } = e.target;
-  setDate(prevState => ({
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setDate((prevState) => ({
       ...prevState,
       [name]: value
-  }));
-};
+    }))
+  }
 
-const [rows, setRows] = useState(10)
-const [name, setName] = useState("")
+  const [rows, setRows] = useState(10)
+  const [name, setName] = useState("")
 
   const options = [
     {
@@ -51,31 +55,30 @@ const [name, setName] = useState("")
       value: "view"
     },
     {
-        label: "View Appointment",
-        value: "view-appointment"
+      label: "View Appointment",
+      value: "view-appointment"
     },
     {
-        label: "Add Treatment",
-        value: "add-treatment"
+      label: "Add Treatment",
+      value: "add-treatment"
     },
     {
-        label: "Add Billing",
-        value: "add-billing"
+      label: "Add Billing",
+      value: "add-billing"
     },
     {
-        label: "Add Prescription",
-        value: "add-prescription"
+      label: "Add Prescription",
+      value: "add-prescription"
     },
     {
-        label: "Edit Patient",
-        value: "edit-patient"
+      label: "Edit Patient",
+      value: "edit-patient"
     },
     {
-        label: "Edit Appointment",
-        value: "edit-appointment"
-    },
+      label: "Edit Appointment",
+      value: "edit-appointment"
+    }
   ]
-
 
   const actionBtn = (id, patientId) => {
     return (
@@ -91,60 +94,55 @@ const [name, setName] = useState("")
   }
 
   async function fetchAppointments() {
-    var color = "";
+    var color = ""
     setAppointments([])
-      const response = await getAppointments(name, date, "APPROVED, ONGOING, CANCELED, COMPLETED, UPCOMING");
-      console.log(response)
-      response.data.data.data.map((data, index) => {
-        var info = {}
-        var date = new Date(data.appointment_date_time)
-        console.log(data.appointment_date_time)
-        var formattedDate = date.toDateString().split(" ")
-        info.id = data.patient.id
-        info.name =
-          data.patient.first_name +
-          " " +
-          data.patient.middle_name +
-          " " +
-          data.patient.last_name
-        info.time =
-          formattedDate[1] + " " + formattedDate[2] + ", " + getTime(date)
-        info.purpose = data.services[0]
-        info.payment = "unpaid"
-  
-  
-        if(data.status === 'UPCOMING') {
-          color = "yellow"
-        }
-        else if(data.status === 'ONGOING') {
-          color = "blue"
-        }
-        else if(data.status === 'COMPLETED') {
-          color = "green"
-        }
-        else if(data.status === 'CANCELED') {
-          color = "red"
-        }
-  
-        info.action = actionBtn(data.id, data.patient.id)
-        setAppointments((oldArray) => [...oldArray, info])
-      })
+    const response = await getAppointments(
+      name,
+      date,
+      "APPROVED, ONGOING, CANCELED, COMPLETED, UPCOMING"
+    )
+    console.log(response)
+    response.data.data.data.map((data, index) => {
+      var info = {}
+      var date = new Date(data.appointment_date_time)
+      console.log(data.appointment_date_time)
+      var formattedDate = date.toDateString().split(" ")
+      info.id = data.patient.id
+      info.name =
+        data.patient.first_name +
+        " " +
+        data.patient.middle_name +
+        " " +
+        data.patient.last_name
+      info.time =
+        formattedDate[1] + " " + formattedDate[2] + ", " + getTime(date)
+      info.purpose = data.services[0]
+      info.payment = "unpaid"
+
+      if (data.status === "UPCOMING") {
+        color = "yellow"
+      } else if (data.status === "ONGOING") {
+        color = "blue"
+      } else if (data.status === "COMPLETED") {
+        color = "green"
+      } else if (data.status === "CANCELED") {
+        color = "red"
+      }
+
+      info.action = actionBtn(data.id, data.patient.id)
+      setAppointments((oldArray) => [...oldArray, info])
+    })
     //setEditPatient(response.data.data.data)
   }
 
   const [clickSearch, setClickSearch] = useState(false)
 
   React.useEffect(() => {
-    fetchAppointments();
-  }, [date,clickSearch])
-
-
-  
+    fetchAppointments()
+  }, [date, clickSearch])
 
   if (selected.value === "view") {
-    return (
-      <Navigate to={"/view-patient/" + selected.patient} />
-    )
+    return <Navigate to={"/view-patient/" + selected.patient} />
   }
 
   if (selected.value === "add-appointment") {
@@ -157,15 +155,14 @@ const [name, setName] = useState("")
     return <Navigate to={"/edit-patient/" + selected.patient} />
   }
 
-  if(selected.value === "edit-appointment") {
-    return <Navigate
-    to={
-      "/edit-appointment/" +
-      selected.appointment +
-      "/" +
-      selected.patientId
-    }
-  />
+  if (selected.value === "edit-appointment") {
+    return (
+      <Navigate
+        to={
+          "/edit-appointment/" + selected.appointment + "/" + selected.patientId
+        }
+      />
+    )
   }
 
   if (selected.value === "add-treatment") {
@@ -175,7 +172,6 @@ const [name, setName] = useState("")
   if (selected.value === "add-prescription") {
     return <Navigate to={"/add-prescription/" + selected.patient} />
   }
-
 
   return (
     <div className="page">
@@ -208,12 +204,12 @@ const [name, setName] = useState("")
                 type={"approved-appointments-search"}
                 tableData={appointments}
                 headingColumns={[
-                    "ID",
-                    "NAME",
-                    "TIME",
-                    "PURPOSE",
-                    "PAYMENT",
-                    "ACTION"
+                  "ID",
+                  "NAME",
+                  "TIME",
+                  "PURPOSE",
+                  "PAYMENT",
+                  "ACTION"
                 ]}
                 rowsPerPage={rows}
                 date={date}

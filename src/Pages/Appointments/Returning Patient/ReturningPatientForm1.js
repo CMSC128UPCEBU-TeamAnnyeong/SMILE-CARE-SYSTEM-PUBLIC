@@ -18,9 +18,6 @@ import { useParams } from "react-router-dom"
 //css
 import "./returningPatient.css"
 
-//components
-import Navbar from "../../../components/Navbar/Navbar"
-
 function ReturningPatientForm1({
   appointment,
   setAppointment,
