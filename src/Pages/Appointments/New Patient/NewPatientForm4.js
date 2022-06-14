@@ -171,11 +171,11 @@ function NewPatientForm4({
   }, [category])
 
   console.log(redirect)
-  if (redirect == true) {
+  if (redirect === true) {
     return <Navigate to={"/appointment"} />
   }
 
-  if (showToken == true) {
+  if (showToken === true) {
     return <Navigate to={"/appointment"} />
   }
 
@@ -259,6 +259,7 @@ function NewPatientForm4({
             <div className="personal-info-header-appointment">
               Add Appointment
             </div>
+
             {renderBody()}
             {renderButtons()}
           </div>

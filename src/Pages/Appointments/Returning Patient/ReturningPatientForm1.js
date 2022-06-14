@@ -14,6 +14,7 @@ import {
   getPatientByShortId
 } from "../../../Helpers/apiCalls/patientApi"
 import { useParams } from "react-router-dom"
+import { Button, Modal } from "react-bootstrap"
 
 //css
 import "./returningPatient.css"
@@ -39,6 +40,7 @@ function ReturningPatientForm1({
   const [purpose, setPurpose] = useState("")
   const [patientId, setPatientId] = useState("")
   const [isFound, setIsFound] = useState(false)
+  const [token, setToken] = useState();
   const { id } = useParams()
 
   const options = [{ label: "Root Canal", value: "" }]
@@ -54,6 +56,13 @@ function ReturningPatientForm1({
   } = patient
   const { appointmentDateTime, remarks } = appointment
 
+  //MODAL
+  const [show, setShow] = useState(false)
+  const handleClose = () => {
+      setRedirect(true)
+  }
+  const handleShow = () => setShow(true)
+
   async function submitAppointment() {
     const response = await createAppointment(
       patient.id,
@@ -67,9 +76,8 @@ function ReturningPatientForm1({
     console.log(response)
     if (response) {
       toast.success("Successfully Added Appointment!")
-      setTimeout(function () {
-        setRedirect(true)
-      }, 2000)
+      handleShow();
+      setToken(response.data.data.data)
     }
   }
 
@@ -335,6 +343,40 @@ function ReturningPatientForm1({
               </>
             )}
             {isFound === true && proceed()}
+            <Modal
+          show={show}
+          onHide={() => {handleClose();}}
+          size="xl"
+        >
+        <Modal.Header closeButton>
+            <Modal.Title> Add Appointment </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+          <div style={{ textAlign: "center", paddingBottom: 15 }}>
+            <div className="appointment-token mb-5">
+              <Modal.Title>Appointment Token</Modal.Title>
+              <div
+                style={{ fontSize: 22, fontWeight: "bold", letterSpacing: 4 }}
+              >
+                {token ? token.token : ""}
+              </div>
+            </div>
+            <div className="patient-id">
+              <Modal.Title>Patient ID</Modal.Title>
+              <div
+                style={{ fontSize: 22, fontWeight: "bold", letterSpacing: 4, marginBottom: 112 }}
+              >
+                {token ? token.patient.short_id : ""}
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => {handleClose()}}>
+            Close
+          </Button>
+        </Modal.Footer>
+        </Modal>
           </div>
         </div>
       </div>

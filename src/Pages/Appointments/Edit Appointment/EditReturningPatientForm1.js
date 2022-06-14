@@ -53,6 +53,13 @@ function EditReturningPatientForm1({
   } = patient
   const { appointmentDateTime, remarks } = appointment
 
+  //MODAL
+  const [show, setShow] = useState(false)
+  const handleClose = () => {
+      setRedirect(true)
+  }
+  const handleShow = () => setShow(true)
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setEditAppointment((prevState) => ({

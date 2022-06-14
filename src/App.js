@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./App.css"
-// import "./components/FontAwesomeIcons"
+import "./components/FontAwesomeIcons"
 import {
   BrowserRouter as Router,
   Routes,
