@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-
 //css
 import "./newPatient.css"
 
@@ -298,7 +297,6 @@ function NewPatientForm1({
                 />
               </div>
             </div>
-
             {proceed()}
           </div>
         </div>

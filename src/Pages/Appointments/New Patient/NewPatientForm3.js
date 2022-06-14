@@ -111,7 +111,7 @@ function NewPatientForm3({
         <div className="row page-content">
           <div className="form-card-cont">
             <div className="row">
-              <h1 className="peronal-info-header">
+              <h1 className="personal-info-header-medical-history">
                 Medical History Information
               </h1>
             </div>
