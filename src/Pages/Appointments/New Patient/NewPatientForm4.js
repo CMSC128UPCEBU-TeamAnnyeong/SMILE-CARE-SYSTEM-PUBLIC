@@ -96,7 +96,6 @@ function NewPatientForm4({
     }
   }
 
-<<<<<<< HEAD
 
   function proceed() {
     if (appointmentDateTime != "" && purpose != "") {
@@ -108,8 +107,6 @@ function NewPatientForm4({
     } 
   }
 
-=======
->>>>>>> 804cf55faec5b0f2f580bca5140bab5ac5ad50b2
   const handleShowToken = () => {
     setToken({
       appointment_token: "",
