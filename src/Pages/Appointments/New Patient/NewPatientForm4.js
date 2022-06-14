@@ -231,7 +231,8 @@ function NewPatientForm4({
                     <br />
                     <select
                       className="form-input-category category-input"
-                      name="services"
+                      name="purpose"
+                      onChange={(e) => setPurpose(e.target.value)}
                     >
                       <option value="" disabled>
                         {" "}
