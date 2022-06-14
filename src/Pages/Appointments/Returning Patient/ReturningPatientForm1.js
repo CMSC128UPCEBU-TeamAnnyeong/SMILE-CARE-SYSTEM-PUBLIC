@@ -37,7 +37,7 @@ function ReturningPatientForm1({
   const [serviceOptions, setServiceOptions] = useState([])
   const [redirect, setRedirect] = useState(false)
   const [patient, setPatient] = useState({})
-  const [purpose, setPurpose] = useState("")
+  const [purpose, setPurpose] = useState("check-up")
   const [patientId, setPatientId] = useState("")
   const [isFound, setIsFound] = useState(false)
   const [token, setToken] = useState();
@@ -273,7 +273,7 @@ function ReturningPatientForm1({
                       onChange={(e) => setPurpose(e.target.value)}
                     >
                       <option value="" disabled> Select </option>
-                      <option value="check-up">Check-up</option>
+                      <option value="check-up" selected>Check-up</option>
                       <option value="follow-up">Follow-up</option>
                       <option value="others">Others</option>
                       {serviceOptions.map((data, index) => {
